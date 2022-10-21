@@ -1,0 +1,46 @@
+
+h1 
+{
+    color:blue;
+    background: lightgreen;
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+body
+{
+    background: black;
+    text-align: center;
+}
+
+p
+{
+    color: whitesmoke;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h2
+{
+    color: burlywood;
+    background: purple;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+h4
+{
+    color: cadetblue;
+    background: brown;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+input
+{
+    width: 30%;
+    text-align: center;
+}
