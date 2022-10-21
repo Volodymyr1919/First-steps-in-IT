@@ -1,6 +1,6 @@
 # First-steps-in-IT
 
-#JS
+# JS
 
 - [clock](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/JS/clock.html)
 
