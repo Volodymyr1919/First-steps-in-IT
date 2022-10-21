@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youami</title>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <style>
+    body
+        {
+            background: green;
+        }
+        .card
+        {
+            border: 4px solid blue;
+            border-radius: 28px;
+            width: fit-content;
+            padding: 10px;
+            background: rgb(168, 4, 250);
+            transition: all 0.5s ease-out;
+        }
+        .card:not(:last-child)
+        {
+            margin-bottom: 20px;
+        }
+        .card:hover
+        {
+            background: yellowgreen;
+        }
+        .card__header
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card__message
+        {
+            font-size: 1.5rem;
+        }
+        .card__message--green
+        {
+            border-bottom: 1px solid red;
+        }
+        .card__date
+        {
+            text-align: right;
+            color: gray;
+        }
+        .card__avatar
+        {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card__header">
+            <h2 class="card__title">Ivan Ivanov</h2>
+            <img class="card__avatar" src="https://via.placeholder.com/48" alt="">
+        </div>
+        <p class="card__message card__message--green">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, at.
+        </p>
+        <p class="card__date">
+            01-01-2000
+        </p>
+    </div>
+    <div class="card">
+        <div class="card__header">
+            <h2 class="card__title">Ivan Ivanov</h2>
+            <img class="card__avatar" src="https://via.placeholder.com/48" alt="">
+        </div>
+        <p class="card__message card__message--green">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, at.
+        </p>
+        <p class="card__date">
+            01-01-2000
+        </p>
+    </div>
+    <div class="card">
+        <div class="card__header">
+            <h2 class="card__title">Ivan Ivanov</h2>
+            <img class="card__avatar" src="https://via.placeholder.com/48" alt="">
+        </div>
+        <p class="card__message card__message--green">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, at.
+        </p>
+        <p class="card__date">
+            01-01-2000
+        </p>
+    </div>
+</body>
+</html>

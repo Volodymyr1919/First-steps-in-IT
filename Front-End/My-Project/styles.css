@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        html
+        {
+            scroll-behavior: smooth;
+        }        
+        body
+        {
+            margin: 0;
+            background: rgb(35, 35, 35);
+            font-family: 'Poppins', sans-serif;
+        }
+        body::-webkit-scrollbar
+        {
+            display: none;
+        }
+        figure
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            box-sizing: border-box;
+            position: fixed;
+            background: rgb(35, 35, 35);
+            margin-top: -100px;
+        }
+        nav
+        {
+            display: flex;
+        }
+        .list
+        {
+            display: flex;
+            align-items: center;                
+        }
+        li
+        {
+            margin: 20px;
+            list-style: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .li__link
+        {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        button
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 40px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 30px 10px 30px;
+            background: orange;
+            box-sizing: border-box;
+            font-size: 1.2rem;
+            font-weight: 900;
+            cursor: pointer;
+            height: 50px;
+        }
+        button:active,
+        .about:active
+        {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+        .li__link:active
+        {
+            color: orange;
+        }
+        .main__img_size
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 40px;
+        }
+        .intro
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .exper
+        {
+            width: 70%;
+            display: flex;
+            margin-top: 100px;
+            justify-content: space-between;
+        }
+        a
+        {
+            color: orange;
+        }
+        .self
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        .name
+        {
+            font-size: 2rem;
+            font-weight: 500;
+            color: white;
+        }
+        h1
+        {
+            margin-top: -30px;
+            font-size: 4rem;
+        }
+        .desc
+        {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            color: white;
+        }
+        .div__block_color,
+        .block
+        {
+            display: flex;
+            background: rgb(73, 73, 73);
+            width: 350px;
+            height: 100px;
+            border-radius: 15px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .div__block_color
+        {
+            background: orange;
+        }
+        .sinf
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo
+        {
+            margin-top: 15px;
+            font-size: 4rem;
+        }
+        .div__num_view,
+        .num
+        {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        .div__num_view
+        {
+            color: orange;
+        }
+        .text,
+        .div__text_view
+        {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .div__text_view
+        {
+            color: white;
+        }
+        .whoiam
+        {
+            display: flex;
+            margin-top: 250px;
+            width: 70%;
+            margin-left: 15%;                 
+        }
+        mark
+        {
+            background: rgb(73, 73, 73);
+            color: orange;
+            font-size: 1.3rem;
+            border-radius: 30px;
+            box-sizing: border-box;
+            padding: 0px 20px 0px 20px;
+        }
+        h2
+        {
+            color: white;
+            margin-top: -10px;
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        p
+        {
+            color: white;
+            font-weight: 200;
+            margin-top: -20px;
+        }
+        .about
+        {
+            margin-top: 40px;
+            padding: 10px 30px 10px 30px;
+        }
+        footer
+        {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 150px;
+            background: black;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+        .footer__block
+        {
+            width: 280px;
+        }
+        .block__name
+        {
+            color: orange;
+        }
+        .block__description
+        {
+            color: white;
+            width: 240px;
+        }
+        .footer__button
+        {
+            color: gray;
+            text-decoration: none;
+        }
+        .myskills
+        {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .myskills__section
+        {
+            width: 40%;
+            margin-left: 5%;
+        }
+        .skills__icons
+        {
+            display: grid;
+            grid-template-columns: repeat(6, 70px);
+            grid-template-rows: 70px 70px;
+            gap: 20px;
+            width: 30%;
+            height: 150px;
+            margin-right: 5%;
+        }
+        .icon__item
+        {
+            display: flex;
+            font-size: 3rem;
+            background: rgb(73, 73, 73);
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon__item:hover
+        {
+            background: rgba(255, 166, 0, 0.708);
+            cursor: pointer;
+        }
+        .submenu__link
+        {
+            text-decoration: none;
+            color: white;
+            padding: 8px 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .submenu__link:hover,
+        .submenu__link-active
+        {
+            color: black;
+            background: orange;
+            padding: 8px 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .myworks__header,
+        .myworks
+        {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        menu
+        {
+            display: flex;
+        }
+        .myworks__main
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto;
+            gap: 25px;
+            overflow-y: scroll;
+            height: 70vh;
+        }
+        .myworks__main::-webkit-scrollbar
+        {
+            display: none;
+        }
+        .testimonials
+        {
+            margin-top: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .testimonials__feedback
+        {
+            display: flex;
+            gap: 15px;
+        }

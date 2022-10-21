@@ -1,0 +1,5 @@
+   0 nano script2.sh
+   1 chmod 744 script2.sh 
+   2 ./script2.sh 
+   3 cat /opt/3/newfile.txt 
+   4 history >> history2.txt

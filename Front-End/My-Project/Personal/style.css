@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+html,
+body
+{
+    height: fit-content;
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    background: linear-gradient(120deg, #131313, #220000);
+}
+::-webkit-scrollbar-thumb
+{
+    background: orange;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+::-webkit-scrollbar
+{
+    background: #220000;
+}
+.logo
+{
+    font-family: 'Satisfy', cursive;
+    font-size: 5rem;
+    color: blue;
+    text-shadow: rgba(0, 0, 255, 0.403) 10px 30px 4px;
+    -webkit-transform: rotateZ(20deg);
+    transform: rotateZ(20deg);
+    background: #c40024;
+    width: 100px;
+    height: 125px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 8px;
+}
+header
+{
+    margin-top: 30px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.expirience__menu,
+.header__menu
+{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+li
+{
+    list-style: none;
+}
+.item__link
+{
+    text-decoration: none;
+    color: orange;
+}
+.expirience__item,
+.skills__item,
+.about__item,
+.menu__item
+{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.item__link-active,
+.item__link:active
+{
+    color: wheat;
+}
+.header__button
+{
+    background: transparent;
+    border: none;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    width: 116px;
+    height: 90px;
+    position: relative;
+}
+.header__icon:hover::after
+{
+    content: attr(data-title);
+    position: absolute; 
+    left: 5%; top: 70%; 
+    z-index: 1;
+    background: transparent;
+    font-size: 15px;
+    padding: 5px;
+    border: 3px solid orange;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    color: orange;
+}
+.header__icon:hover
+{
+    cursor: pointer;
+}
+.header__icon:active
+{
+    background: none;
+    border: none;
+}
+.header__icon
+{
+    font-size: 3rem;
+    background: rgb(0, 98, 255);
+    border-left: 5px solid rgb(0, 98, 255);
+    border-right: 5px solid rgb(0, 98, 255);
+    border-bottom: 10px solid rgb(0, 98, 255);
+    border-radius: 50%;
+}
+.main__home
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home__name
+{
+    color: orange;
+    font-size: 1.5rem;
+    display: flex;
+    font-weight: 500;
+    width: 600px;
+}
+.myname
+{
+    border-bottom: 2px solid white;
+    color: white;
+    margin-left: 15px;
+}
+.home__text
+{
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 850px;
+}
+h1
+{
+    font-size: 3rem;
+    color: orange;
+}
+.home__imgme
+{
+    margin: 0;
+}
+.main__about
+{
+    margin-top: 200px;
+    display: flex;
+}
+.about__text
+{
+    width: 600px;
+}
+mark
+{
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 30px;
+    background: orange;
+    color: #920000;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+h2
+{
+    color: wheat;
+    font-size: 1.8rem;
+}
+.about__description
+{
+    color: wheat;
+    font-size: 1.2rem;
+}
+.about__button
+{
+    background: #920000;
+    border-right: 7px solid #620000;
+    border-bottom: 10px solid #620000;
+    border-left:  7px solid #620000;
+    border-top: none;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+    color: orange;
+}
+.about__button:hover
+{
+    border-right: 5px solid #620000;
+    border-bottom: 5px solid #620000;
+    border-left:  5px solid #620000;
+    cursor: pointer;
+}
+.about__button:active
+{
+    border: none;
+}
+.about__item:not(:last-child)
+{
+    margin-bottom: 50px;
+}
+.main__skills
+{
+    margin-top: 200px;
+    width: 500px;
+    display: flex;
+}
+.skills__text
+{
+    color: wheat;
+    font-size: 1.1rem;
+    width: 500px;
+}
+.skills__menu
+{
+    direction: rtl;
+}
+.skills__apps
+{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(2, 70px);
+    gap: 20px;
+    margin-left: 150px;
+}
+.sills__item:hover
+{
+    background: #620000;
+    cursor: pointer;
+}
+.sills__item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(46, 46, 46);
+    border-radius: 5px;
+    font-size: 3rem;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove 
+{
+    50% {-webkit-transform: rotate(180deg);}
+}
+.skills__item:not(:last-child)
+{
+    margin-bottom: 20px;
+}
+.picture__block
+{
+    margin: 0;
+    width: 600px;
+    height: 313px;
+}
+.block__img
+{
+    object-fit: cover;
+    width: 600px;
+    height: 313px;
+}
+.main__expirience
+{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.expirience__picture
+{
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-auto-rows: 313px;
+    overflow-y: scroll;
+    height: 60vh;
+    border-radius: 20px;
+    gap: 10px;
+}
+.expirience__picture::-webkit-scrollbar
+{
+    display: none;
+}
+footer
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 150px;
+    background: black;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.footer__block
+{
+    width: 280px;
+}
+.block__description
+{
+    color: orange;
+    width: 240px;
+}
+.footer__button
+{
+    color: gray;
+    text-decoration: none;
+}
+.footer__button:active
+{
+    color: wheat;
+}

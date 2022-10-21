@@ -1,0 +1,38 @@
+   0 nano script.sh
+   1 cat /etc/os-release
+   2 nano script.sh
+   3 ls
+   4 ls -la
+   5 ls -a
+   6 ls -l
+   7 chmod u+x script.sh 
+   8 ls -l
+   9 chmod g+wx script.sh 
+  10 ls -l
+  11 chmod o+wx script.sh 
+  12 ls -l
+  13 chmod go-wx script.sh 
+  14 ls -l
+  15 chmod 700 script.sh 
+  16 ls -l
+  17 chmod 744 script.sh 
+  18 ls -l
+  19 ./script.sh 
+  20 /root/script.sh
+  21 bash script.sh
+  22 chmod -x script.sh 
+  23 ./script.sh 
+  24 bash script.sh
+  25 chmod u+x script.sh 
+  26 ./script.sh 
+  27 nano script.sh 
+  28 ./script.sh 
+  29 env
+  30 ls
+  31 cp script.sh /bin/1
+  32 1
+  33 nano script.sh 
+  34 ./script.sh 
+  35 nano script.sh 
+  36 ./script.sh 
+  37 history >> history.txt

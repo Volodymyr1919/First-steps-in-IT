@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="move.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu">
+        <figure><img src="logo.png" alt=""></figure>
+        <nav>
+          <ul class="list">
+            <li><a href="#Home" class="li__link" onclick="moveHome()">Home</a></li>
+            <li><a href="#About" class="li__link" onclick="moveAbout()">About</a></li>
+            <li><a href="#Skills" class="li__link" onclick="moveSkills()">Skills</a></li> 
+            <li><a href="#Portfolio" class="li__link" onclick="movePortfolio()">Portfolio</a></li>
+            <li><a href="#Contact" class="li__link" onclick="moveContact()">Contact</a></li>
+        </ul>  
+        </nav>
+        <button>Hire Me</button>
+    </header>
+    <main id="Home">
+        <div class="intro">
+            <div class="self">
+                <p class="name">Hi, I Am <a href="">Kartik Bansal</a> <iconify-icon icon="emojione:waving-hand"></iconify-icon></p>
+                <h1>Creative Designer & Front-End Developer</h1>
+                <p class="desc">I Design And Code Beautifully Simple Things, And I Love What I Do.</p>
+            </div>
+            <img src="avatarka.jpeg" alt="" class="main__img_size">
+            <div class="exper">
+                <div class="div__block_color">
+                    <div class="logo"><iconify-icon icon="openmoji:sports-medal"></iconify-icon></div>
+                    <div class="sinf">
+                        <div class="num">5+</div>
+                        <div class="text">Years Of Experience</div>
+                    </div>
+                    <iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
+                </div>
+                <div class="block">
+                    <div class="logo"><iconify-icon icon="emojione-v1:ballot-box-bold-check"></iconify-icon></div>
+                    <div class="sinf">
+                        <div class="div__num_view">100+</div>
+                        <div class="div__text_view">Completed Projects</div>
+                    </div>
+                    <iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
+                </div>
+                <div class="block">
+                    <div class="logo"><iconify-icon icon="heroicons-solid:user-group"></iconify-icon></div>
+                    <div class="sinf">
+                        <div class="div__num_view">50+</div>
+                        <div class="div__text_view">Happy Clients</div>
+                    </div>
+                    <iconify-icon icon="dashicons:arrow-right-alt2" id="About"></iconify-icon>
+                </div>
+            </div>
+        </div>
+        <div class="whoiam">
+            <figure><img src="aboutme.png" alt="" class="man"></figure>
+            <section>
+                <mark>WHO I AM</mark>
+                <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga fugit iure vero, tempora nam reprehenderit optio. Necessitatibus commodi repudiandae eum molestias laudantium. Perferendis quis, id rerum ullam ex quisquam saepe, illum eligendi dolore odit repellat aspernatur commodi fuga! Tenetur dolores commodi voluptate ea praesentium laborum. Dolor eligendi sit minus voluptatibus id eos magnam? Deserunt magnam eaque modi accusamus corporis vel eveniet rerum nemo ipsum quam eligendi sunt harum optio quas qui at, dignissimos esse blanditiis eos. Veniam non placeat qui hic nam, ex cum fuga sapiente soluta, distinctio alias. Illo odio debitis maiores provident a perferendis similique explicabo praesentium.
+                </p>
+                <button class="about"  id="Skills">Hire Me</button>
+            </section>
+        </div>
+        <div class="myskills">
+            <section class="myskills__section">
+                <mark>MY SKILLS</mark>
+                <h2>What My Programming Skills Included?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia culpa cumque corporis accusantium ad voluptate porro neque. Eos, dicta eum?</p>
+                <button class="about" id="Portfolio">Hire Me</button>
+            </section>
+            <section class="skills__icons">
+                <div class="icon__item"><iconify-icon icon="logos:html-5"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="logos:css-3"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="vscode-icons:file-type-js-official"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="logos:git-icon"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="twemoji:letter-b"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="logos:adobe-xd"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="vscode-icons:file-type-sass"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="vscode-icons:file-type-tsconfig"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="vscode-icons:file-type-python"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="typcn:waves"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="logos:figma"></iconify-icon></div>
+                <div class="icon__item"><iconify-icon icon="bi:github"></iconify-icon></div>
+            </section>
+        </div>
+        <div class="myworks">
+            <div class="myworks__header">
+                <mark>MY WORKS</mark>
+                <h2>Featured Works</h2>
+                <div class="myworks__submenu">
+                    <menu>
+                        <li><a href="" class="submenu__link submenu__link-active">All</a></li>
+                        <li><a href="" class="submenu__link">Mobile App</a></li>
+                        <li><a href="" class="submenu__link">Website Design</a></li>
+                        <li><a href="" class="submenu__link">Website development</a></li>
+                    </menu>
+                </div>
+            </div>
+            <div class="myworks__main">
+                <div class="main__image"><img src="app.png" alt=""></div>
+                <div class="main__image"><img src="app.png" alt=""></div>
+                <div class="main__image"><img src="app.png" alt=""></div>
+                <div class="main__image"><img src="app.png" alt=""></div>
+                <div class="main__image"><img src="app.png" alt=""></div>
+                <div class="main__image"><img src="app.png" alt=""></div>
+            </div>
+        </div>
+        <div class="testimonials">
+                <mark>TESTIMONIALS</mark>
+                <h2>What Customer Says</h2>
+            <section class="testimonials__feedback">
+                <div class="feedback__img"><img src="feedback.png" alt=""></div>
+                <div class="feedback__img"><img src="feedback.png" alt=""></div>
+                <div class="feedback__img"><img src="feedback.png" alt=""></div>
+            </section>
+        </div>
+    </main>
+    <footer id="Contact">
+        <div class="footer__name">
+            <h2 class="block__name">Kartik Bansal.</h2>
+            <div class="block__description"> Creative designer & front-end developer</div>
+        </div>
+        <div class="footer__block">
+            <h3 class="block__description">Useful Links</h3>
+            <p><a href="#Home" class="footer__button">Home</a></p>
+            <p><a href="#About" class="footer__button">About</a></p>
+            <p><a href="#Skills" class="footer__button">Skills</a></p>
+            <p><a href="#Portfolio" class="footer__button">Portfolio</a></p>
+            <p><a href="#Contact" class="footer__button">Contact</a></p>
+        </div>
+        <div class="footer__block">
+            <h3 class="block__description">Social Media</h3>
+            <p><a href="" class="footer__button">Instagram</a></p>
+            <p><a href="" class="footer__button">linkedin</a></p>
+            <p><a href="" class="footer__button">Dribbble</a></p>
+            <p><a href="" class="footer__button">Behance</a></p>
+            <p><a href="" class="footer__button">GitHub</a></p>
+        </div>
+        <div class="footer__block">
+            <h3 class="block__description">Newsletter</h3>
+            <p class="footer__button">Enter your e-mail and get notified about news, of.</p>
+        </div>
+    </footer>
+</body>
+</html>

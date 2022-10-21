@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+        body, html
+        {
+            height: 100%;
+        }
+        body
+        {
+            font-family: 'Qwitcher Grypen', cursive;
+            background: linear-gradient(45deg, #0223fb6e, transparent);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login
+        {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px 0 0 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 350px;
+        }
+        .fingerprint
+        {
+            font-size: 3rem;
+        }
+        .title
+        {
+            font-size: 3rem;
+        }
+        .login__row
+        {
+            margin-bottom: 0.3rem;
+        }
+        .login__input
+        {
+            border: none;
+            outline: none;
+            background: none;
+            padding: 1rem;
+            font-size: 1rem;
+            width: 200px;
+        }
+        .login__input-container
+        {
+            background: rgba(52, 1, 254, 0.239);
+            padding-left: 1rem;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+        .login__button:hover
+        {
+            background:  rgb(38, 1, 249);
+        }
+        .login__button
+        {
+            padding: 1rem 2rem;
+            background: rgba(38, 1, 249, 0.338);
+            color: azure;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+        }
+        .twins
+        {
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            border-radius: 16px;
+        }
+        .picture
+        {
+            border-radius: 0 16px 16px 0;
+            background-image: url(/Something.png);
+            font-size: 4rem;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgba(14, 2, 249, 0.623);
+        }
+        a
+        {
+            font-size: 2rem;
+        }
+        @media (max-width: 768px)
+        {
+            .login
+            {
+                width: 100%;
+            }
+            .picture
+            {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="twins">
+        <div class="login">
+            <div class="login__row">
+                <iconify-icon class="fingerprint" icon="mingcute:fingerprint-fill"></iconify-icon>
+                <img class="login__icon" src="" alt="">
+            </div>
+            <h1 class="title">Welcome to our something</h1>
+            <div class="login__row">
+                <div class="login__input-container">
+                   <iconify-icon icon="ic:baseline-supervisor-account"></iconify-icon>
+                <input class="login__input" type="text" placeholder="Login"> 
+                </div>
+            </div>
+            <div class="login__row">
+                <div class="login__input-container">
+                <iconify-icon icon="wpf:password1"></iconify-icon>
+                <input class="login__input" type="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="login__row">
+                <button class="login__button">Log In</button>
+            </div>
+        </div>
+        <div class="picture">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima itaque inventore ducimus! Assumenda error consectetur nesciunt velit minima ipsa.
+                <a href="">Learn more</a>
+        </div>
+    </div>
+</body>
+</html>

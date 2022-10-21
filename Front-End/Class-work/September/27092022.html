@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        html,
+        body,
+        .wrapper
+        {
+            height: 100%;
+        }
+        body
+        {
+            margin: 0;
+        }
+        .wrapper
+        {
+            display: grid;
+            grid-template-columns: 200px 500px auto 100px;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "aside inbox chat panel";
+        }
+        aside
+        {
+            background: lightblue;
+            grid-area: aside;
+        }
+        .inbox
+        {
+            background: coral;
+            grid-area: inbox;
+        }
+        .chat
+        {
+            background: white;
+            grid-area: chat;
+        }
+        .panel
+        {
+            background: lightgray;
+            grid-area: panel;
+        }
+        input
+        {
+            border: none;
+            font-size: 1rem;
+            padding: 10px;
+            border-radius: 12px;
+        }
+        input:focus
+        {
+            outline: none;
+            background: lawngreen;
+        }
+        input::placeholder
+        {
+            color: blueviolet;
+        }
+        .item
+        {
+            background: gold;
+            display: grid;
+            width: 350px;
+            aspect-ratio: 4 / 1;
+            grid-template-columns: 90px auto 50px;
+            padding: 10px;
+            gap: 30px;
+            border-radius: 18px;
+        }
+        .avatar
+        {
+            margin: 0;
+            line-height: 0;
+            width: 80px;
+            height: 80px;
+            position: relative;
+        }
+        img
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+        }
+        .image,
+        .name,
+        .indicator
+        {
+            display: grid;
+            align-items: center;
+        }
+        .online
+        {
+            position: absolute;
+            background: lightgreen;
+            width: 10px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 2px solid white;
+            right: 0;
+            bottom: 0;
+        }
+        p
+        {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <div class="inbox">
+            <input type="text" placeholder="Write a message...">
+            <div class="item">
+                <div class="image">
+                    <figure class="avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        <div class="online"></div>
+                    </figure>
+                </div>
+                <div class="name">
+                    <p>
+                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos odit aut sed deserunt nostrum repellat, officia ratione sapiente iure quasi! Inventore quis quisquam, similique reprehenderit quo ducimus aspernatur. Nemo porro, molestiae cupiditate ipsa et ad officia quas, tenetur dolores qui itaque officiis, at exercitationem totam laudantium voluptates ea nihil consequuntur! 
+                    </p>
+                    </div>
+                <div class="indicator">2</div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <figure class="avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        <div class="online"></div>
+                    </figure>
+                </div>
+                <div class="name">
+                    <p>
+                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos odit aut sed deserunt nostrum repellat, officia ratione sapiente iure quasi! Inventore quis quisquam, similique reprehenderit quo ducimus aspernatur. Nemo porro, molestiae cupiditate ipsa et ad officia quas, tenetur dolores qui itaque officiis, at exercitationem totam laudantium voluptates ea nihil consequuntur! 
+                    </p>
+                    </div>
+                <div class="indicator">2</div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <figure class="avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        <div class="online"></div>
+                    </figure>
+                </div>
+                <div class="name">
+                    <p>
+                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos odit aut sed deserunt nostrum repellat, officia ratione sapiente iure quasi! Inventore quis quisquam, similique reprehenderit quo ducimus aspernatur. Nemo porro, molestiae cupiditate ipsa et ad officia quas, tenetur dolores qui itaque officiis, at exercitationem totam laudantium voluptates ea nihil consequuntur! 
+                    </p>
+                    </div>
+                <div class="indicator">2</div>
+            </div>
+        </div>
+        <div class="chat"></div>
+        <div class="panel"></div>
+    </div>
+</body>
+</html>

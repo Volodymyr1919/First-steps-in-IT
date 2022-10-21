@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="Chat.js"></script>
+</head>
+<body>
+    <!-- ----------------------------- Side-bar ---------------------------- -->
+    <aside class="menu">
+        <figure class="menu__icon"><iconify-icon icon="eva:cube-fill" id="icon"></iconify-icon>Shark</figure>
+        <nav>
+            <menu>
+                <li class="menu__item"><iconify-icon icon="heroicons:square-3-stack-3d" id="margin"></iconify-icon>Dashboard</li>
+                <li class="menu__item"><iconify-icon icon="akar-icons:statistic-up" id="margin"></iconify-icon>Statistic</li>
+                <li class="menu__item"><iconify-icon icon="ic:baseline-contact-support" id="margin"></iconify-icon>Support</li>
+                <li class="menu__item menu__item-active"><iconify-icon icon="bxs:inbox" id="margin"></iconify-icon>Inbox</li>
+                <li class="menu__item"><iconify-icon icon="ic:outline-rocket-launch" id="margin"></iconify-icon>Goals</li>
+                <li class="menu__item"><iconify-icon icon="dashicons:admin-links" id="margin"></iconify-icon>Links</li>
+            </menu>
+        </nav>
+    <!-- ----------------------------- Projects ---------------------------- -->
+        <section class="projects">
+            <menu>
+            <h5 class="projects__title">PROJECTS</h5>
+            <li class="projects__item"><iconify-icon icon="bx:square-rounded" class="projects__icon projects__icon-first"></iconify-icon>Calipso<span class="projects__notification">+4</span></li>
+            <li class="projects__item"><iconify-icon icon="bx:square-rounded" class="projects__icon projects__icon-second"></iconify-icon>BWS bank<span class="projects__notification">+5</span></li>
+            <li class="projects__item"><iconify-icon icon="bx:square-rounded" class="projects__icon projects__icon-third"></iconify-icon>Unicorn app<span class="projects__notification">+1</span></li>
+            <li class="projects__item"><iconify-icon icon="bx:square-rounded" class="projects__icon projects__icon-fourth"></iconify-icon>Salt<span class="projects__notification">+3</span></li>
+            </menu>
+        </section>
+    <!-- ----------------------------- Button ---------------------------- -->
+        <button class="button">Show more</button>
+    </aside>
+    <!-- ----------------------------- Main ------------------------------ -->
+    <main>
+        <section class="main__list">
+            <header class="main__title">
+                <h1>Inbox</h1>
+                <button class="main__button">+</button>  
+            </header>
+            <div class="main__submenu">
+                <li class="submenu__text submenu__text-active">General</li>
+                <li class="submenu__text">Total</li>
+            </div>
+    <!-- ----------------------------- Chats ---------------------------- -->
+            <div class="main__chats">
+                <div class="main__block main__block-active" onclick="toggleChat()">
+                    <div class="block__image">
+                        <figure class="block__avatar">
+                            <img src="https://via.placeholder.com/80x160" alt="">
+                            <div class="block__status"></div>
+                        </figure>
+                    </div>
+                    <div class="block__content">
+                        <p class="block__name">Michael.B </p>
+                        <p class="block__role">Project manager</p>
+                        <div class="block__message">
+                            <p>Sent you the file</p>
+                        </div>
+                    </div>
+                    <div class="block__notification">
+                        <div class="notification__count">2</div>
+                    </div>
+                </div>
+            <div class="main__block main__block-active">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        <div class="block__status"></div>
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Katie.W </p>
+                    <p class="block__role">Middle designer</p>
+                    <div class="block__message">
+                        <p>See you tomorrow Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, minus?</p>
+                    </div>
+                </div>
+                <div class="block__notification">
+                    <div class="notification__count">3</div>
+                </div>
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Arnold.J </p>
+                    <p class="block__role">UI designer</p>
+                    <div class="block__message">
+                        <p>Hi<iconify-icon icon="emojione:waving-hand"></iconify-icon> I checked the layout again</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        <div class="block__status"></div>
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Fannie. K </p>
+                    <p class="block__role">HR manager</p>
+                    <div class="block__message">
+                        <p>okay!</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Isaac.A </p>
+                    <p class="block__role">SMM manager</p>
+                    <div class="block__message">
+                        <p>I don´t think we´re going to finish</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        <div class="block__status"></div>
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Jacob </p>
+                    <p class="block__role">UX designer</p>
+                    <div class="block__message">
+                        <p>Sorry, Friend. I won´t do it again!</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__block">
+                <div class="block__image">
+                    <figure class="block__avatar">
+                        <img src="https://via.placeholder.com/80x160" alt="">
+                        
+                    </figure>
+                </div>
+                <div class="block__content">
+                    <p class="block__name">Lisa.O </p>
+                    <p class="block__role">Online 1 hour ago</p>
+                    <div class="block__message">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cupiditate sequi laudantium nobis ipsa aspernatur incidunt. Excepturi labore pariatur maiores.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </section>
+    <!-- ----------------------------- Chats history header ---------------------------- -->
+        <section class="texting">
+            <header class="texting__header">
+               <div class="texting__person">
+                    <div class="block__image">
+                        <figure class="block__avatar">
+                            <img src="https://via.placeholder.com/80x160" alt="">
+                            <div class="block__status"></div>
+                        </figure>
+                    </div>
+                    <div class="texting__info">
+                        <p class="texting__name">Michael.B</p>
+                        <p class="texting__status">Online</p>  
+                    </div>
+                </div>
+                <div class="texting__items">
+                   <div class="texting__search">
+                   <input type="text" name="" class="texting__searchinput" placeholder="Search"><iconify-icon icon="bytesize:search" class="texting__searchicon"></iconify-icon>
+                </div>
+                <button class="texting__button"><iconify-icon icon="clarity:microphone-line"></iconify-icon></button>
+                <button class="texting__button"><iconify-icon icon="ph:webcam-thin"></iconify-icon></button> 
+                </div>
+            </header>
+    <!-- ----------------------------- Chats history ---------------------------- -->
+            <div class="texting__messages">
+                <div class="texting__history">
+                    <div class="history__date">July 29, Tuesday</div>
+                    <div class="history__mymessage">
+                        <time class="mymessage__time">12:25</time>
+                        <div class="mymessage__contetnt">!Hello</div>
+                    </div>
+                    <div class="history__mymessage">
+                        <div class="mymessage__contetnt"><audio src=""></audio>Some audio for 16 seconds</div>
+                        <div class="mymessage__status">VIEWED AT</div>
+                    </div>
+                    <div class="history__incommessage">
+                        <time class="incommessage__time">12:28</time>
+                        <div class="incommessage__contetnt">Hi <iconify-icon icon="emojione:waving-hand"></iconify-icon></div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__contetnt"><audio src=""></audio>Some audio for 8 seconds</div>
+                    </div>
+                    <div class="history__mymessage">
+                        <time class="mymessage__time">12:29</time>
+                        <div class="mymessage__contetnt">Okay, thank you very much for the speed</div>
+                        <div class="mymessage__status">VIEWED AT</div>
+                    </div>
+                    <div class="history__incommessage">
+                        <time class="incommessage__time">12:30</time>
+                        <div class="incommessage__contetnt">Catch <iconify-icon icon="twemoji:see-no-evil-monkey"></iconify-icon></div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__contetnt">
+                            <div class="content__document">
+                                <div class="document__icon">
+                                    <iconify-icon icon="vscode-icons:file-type-word" class="content__icon"></iconify-icon>
+                                </div>
+                                <div class="document__info">
+                                   <div class="document__name">
+                                  Brief.doc  
+                                </div>
+                                <div class="document__size">
+                                  148kb  
+                                </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history__date">July 29, Tuesday</div>
+                    <div class="history__mymessage">
+                        <div class="mymessage__time">12:25</div>
+                        <div class="mymessage__contetnt">!Hello</div>
+                    </div>
+                    <div class="history__mymessage">
+                        <div class="mymessage__contetnt"><audio src=""></audio>Some audio for 16 seconds</div>
+                        <div class="mymessage__status">VIEWED AT</div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__time">12:28</div>
+                        <div class="incommessage__contetnt">Hi <iconify-icon icon="emojione:waving-hand"></iconify-icon></div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__contetnt"><audio src=""></audio>Some audio for 8 seconds</div>
+                    </div>
+                    <div class="history__mymessage">
+                        <div class="mymessage__time">12:29</div>
+                        <div class="mymessage__contetnt">Okay, thank you very much for the speed</div>
+                        <div class="mymessage__status">VIEWED AT</div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__time">12:30</div>
+                        <div class="incommessage__contetnt">Catch <iconify-icon icon="twemoji:see-no-evil-monkey"></iconify-icon></div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__contetnt">
+                            <div class="content__document">
+                                <div class="document__icon">
+                                    <iconify-icon icon="vscode-icons:file-type-word" class="content__icon"></iconify-icon>
+                                </div>
+                                <div class="document__info">
+                                   <div class="document__name">
+                                  Brief.doc  
+                                </div>
+                                <div class="document__size">
+                                  148kb  
+                                </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history__date">July 29, Tuesday</div>
+                    <div class="history__mymessage">
+                        <div class="mymessage__time">12:25</div>
+                        <div class="mymessage__contetnt">!Hello</div>
+                    </div>
+                    <div class="history__mymessage">
+                        <div class="mymessage__contetnt"><audio src=""></audio>Some audio for 16 seconds</div>
+                        <div class="mymessage__status">VIEWED AT</div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__time">12:28</div>
+                        <div class="incommessage__contetnt">Hi <iconify-icon icon="emojione:waving-hand"></iconify-icon></div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__contetnt"><audio src=""></audio>Some audio for 8 seconds</div>
+                    </div>
+                    <div class="history__mymessage">
+                        <div class="mymessage__time">12:29</div>
+                        <div class="mymessage__contetnt">Okay, thank you very much for the speed</div>
+                        <div class="mymessage__status">VIEWED AT</div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__time">12:30</div>
+                        <div class="incommessage__contetnt">Catch <iconify-icon icon="twemoji:see-no-evil-monkey"></iconify-icon></div>
+                    </div>
+                    <div class="history__incommessage">
+                        <div class="incommessage__contetnt">
+                            <div class="content__document">
+                                <div class="document__icon">
+                                    <iconify-icon icon="vscode-icons:file-type-word" class="content__icon"></iconify-icon>
+                                </div>
+                                <div class="document__info">
+                                   <div class="document__name">
+                                  Brief.doc  
+                                </div>
+                                <div class="document__size">
+                                  148kb  
+                                </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!-- ----------------------------- Chats input ---------------------------- -->
+                <div class="texting__input">
+                    <input type="text" placeholder="Write a message..." class="texting__inputtext">
+                    <div class="texting__buttons">
+                        <button class="texting__buttonsitem"><iconify-icon icon="clarity:image-gallery-line"></iconify-icon></button>
+                        <button class="texting__buttonsitem"><iconify-icon icon="clarity:microphone-line"></iconify-icon></button>
+                        <button class="texting__buttonsitem texting__buttonsitem-colored"><iconify-icon icon="fluent:send-28-filled"></iconify-icon></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- ----------------------------- Panel ---------------------------- -->
+        <section class="extra">
+            <button class="extra__button extra__button-colored"><iconify-icon icon="zondicons:dots-horizontal-double" rotate="90deg"></iconify-icon></button>
+            <div class="extra__actions">
+            <button class="extra__button"><iconify-icon icon="icon-park-outline:attention"></iconify-icon></button>
+            <button class="extra__button"><iconify-icon icon="ep:mute-notification"></iconify-icon></button>
+            <button class="extra__button"><iconify-icon icon="majesticons:delete-bin-line"></iconify-icon></button>  
+            </div>
+        </section>
+    </main>
+</body>
+</html>

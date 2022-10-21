@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        .wrapper
+        {
+            height: 100%;
+        }
+        body
+        {
+            margin: 0;
+        }
+        .wrapper
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 200px 1fr 1fr 100px;
+            grid-template-areas: 
+            "header header logo"
+            "main main main1"
+            "main main main2"
+            "footer footer1 footer2";
+            gap: 10px;
+        }
+        .wrapper div
+        {
+            background: blue;
+        }
+        .header
+        {
+            grid-area: header;
+        }
+        .logo
+        {
+            grid-area: logo;
+        }
+        .main
+        {
+            grid-area: main;
+        }
+        .main1
+        {
+            grid-area: main1;
+        }
+        .main2
+        {
+            grid-area: main2;
+        }
+        .footer
+        {
+            grid-area: footer;
+        }
+        .footer1
+        {
+            grid-area: footer1;
+        }
+        .footer2
+        {
+            grid-area: footer2;
+        }
+        @media(max-width:768px)
+        {
+            .logo,
+            .main2,
+            .main1,
+            .footer2,
+            .footer1
+            {
+                display: none;
+            }
+            .wrapper
+            {
+                grid-template-columns: 1fr;
+                grid-template-rows: 200px auto 100px;
+                grid-template-areas:
+                "header"
+                "main"
+                "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header"></div>
+        <div class="logo"></div>
+        <div class="main"></div>
+        <div class="main1"></div>
+        <div class="main2"></div>
+        <div class="footer"></div>
+        <div class="footer1"></div>
+        <div class="footer2"></div>
+    </div>
+</body>
+</html>

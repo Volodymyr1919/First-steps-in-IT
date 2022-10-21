@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />  
+    <link rel="stylesheet" href="scr/styles.css">
+    <script src="index.js"></script>
+    <script src="button.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="search.js"></script>
+    <title>memo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wraper">
+        <aside class="menu">
+            <figure class="logo"><iconify-icon icon="fa6-brands:bandcamp" class="color"></iconify-icon> memo
+            </figure>
+            <nav class="points">
+                <ul>
+                    <li class="point1"><iconify-icon icon="mdi:cards" class="space"></iconify-icon><div class="point_word">Courses</div></li>
+                    <li class="point2"><iconify-icon icon="bxs:credit-card" class="space"></iconify-icon> <div class="point_word">Payment</div></li>
+                    <li class="point3"><iconify-icon icon="bi:chat-square-dots-fill" class="space"></iconify-icon><div class="point_word">Chat</div></li>
+                    <li class="point4"><iconify-icon icon="bi:person-fill" class="space"></iconify-icon> <div class="point_word">Groups</div></li>
+                    <li class="point5"><iconify-icon icon="zondicons:education" class="space"></iconify-icon><div class="point_word">Students</div></li>
+                    <li class="point6"><iconify-icon icon="fluent:megaphone-loud-16-filled" class="space"></iconify-icon><div class="point_word">Support</div></li>
+                </ul>
+            </nav>
+            <button class="logout"><iconify-icon icon="majesticons:door-exit" class="space"></iconify-icon><div class="point_word">Log out</div>
+            </button>
+        </aside>
+        <main class="main">
+            <header class="header">
+                <div class="personalifo">
+                <iconify-icon icon="fluent-emoji-flat:girl-light" class="avatar"></iconify-icon>
+                <div class="data">
+                   <div class="name">Leslie Alexander</div>
+                <div class="city">Los Angeles, CA</div> 
+                </div>
+                </div>
+                <div class="input">
+                    <input class="search" type="serch" placeholder="Search" id="text-to-find"><button class="loop" onclick="FindOnPage('text-to-find',true); return false;" value=" ">
+                        <iconify-icon icon="fluent:search-square-24-filled"></iconify-icon> 
+                    </button>
+                    <button class="button_for_turn_back" type="button" onclick="FindOnPage('text-to-find',false); return false;" value=" " title="Cancel search"><iconify-icon icon="flat-color-icons:cancel"></iconify-icon></button> 
+                </div>
+            </header>
+            <div class="head">
+                <button class="button1" type="button" onclick="toggleSchedule()">Schedule</button>
+                <h1>Courses</h1> <h6>See all</h6><button class="button" type="button" onclick="toggleMenu()">Menu</button>
+            </div>
+            <div class="submenu">
+                <div class="submenu1">All</div><div class="submenu2">Current</div><div class="submenu3">Pending</div><div class="submenu4">Complited</div>
+            </div>
+            <div class="info">
+                <div class="banner">
+                    <div class="image"></div>
+                    <div class="someinfo">
+                      <div class="maininfo"><h4>Programming <iconify-icon icon="codicon:debug-breakpoint-log"></iconify-icon> Oct 09.2022</h4></div>
+                    <div class="text">Object-Oriented <p></p> Programming in Java</div>  
+                    </div>
+                </div>
+                <div class="banner1">
+                    <div class="text1">How to track your <p>course progress easily?</p> </div>
+                    <div class="bottom">
+                      <div class="footter">Find more</div><iconify-icon icon="ep:arrow-right"></iconify-icon>  
+                    </div>
+                </div>
+                <div class="banner2">
+                    <div class="image2"></div>
+                    <div class="someinfo2">
+                      <div class="maininfo2"><h4>Design <iconify-icon icon="codicon:debug-breakpoint-log"></iconify-icon> Sep 17.2022</h4></div>
+                    <div class="text2">Visual Elements of User <p></p> Interface Design</div>  
+                    </div>
+                </div>
+                <div class="banner3">
+                    <div class="image3"></div>
+                    <div class="someinfo3">
+                       <div class="maininfo3"><h4>Design <iconify-icon icon="codicon:debug-breakpoint-log"></iconify-icon> Aug 19.2022</h4></div>
+                    <div class="text3">The Strategy of <p></p> Content Marketing</div> 
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="schedule schedule--open">
+            <div class="calendar">
+                <div class="word">Schedule</div>
+                <div class="calendar-wrapper">
+                    <button id="btnPrev" type="button">Previous</button>
+                    <button id="btnNext" type="button">Next</button>
+                <div id="divCal"></div>
+                </div>
+            </div>
+            <div class="timetable">
+                <h3 class="timetable_title">Upcoming</h3>
+                <div class="timing">
+                    <div class="hour">
+                        <div>09:00</div>
+                        <div>10:00</div>
+                        <div>11:00</div>
+                        <div>12:00</div>
+                        <div>13:00</div>
+                        <div>14:00</div>
+                        <div>15:00</div>
+                        <div>16:00</div>
+                        <div>17:00</div>
+                    </div>
+                    <div class="description">
+                        <div style="border-bottom: 2px solid rgba(128, 128, 128, 0.31);"></div>
+                        <div class="description1"><div class="img"></div><div class="contetnt"><div class="hdr">10.00-10.30</div><div class="worktype">User Interface Design</div></div></div>
+                        <div style="border-bottom: 2px solid rgba(128, 128, 128, 0.31);"></div>
+                        <div style="border-bottom: 2px solid rgba(128, 128, 128, 0.31);"></div>
+                        <div class="description1"><div class="img1"></div><div class="contetnt"><div class="hdr">13.00-13.30</div><div class="worktype">Programming in Java</div></div style="border-bottom: 2px solid rgba(128, 128, 128, 0.31);"></div>
+                        <div style="border-bottom: 2px solid rgba(128, 128, 128, 0.31);"></div>
+                        <div style="border-bottom: 2px solid rgba(128, 128, 128, 0.31);"></div>
+                        <div class="description1"><div class="img2"></div><div class="contetnt"><div class="hdr">16.00-16.30</div><div class="worktype">The Strategy of Marketing</div></div></div>
+                        <div style="border-bottom: 2px solid rgba(128, 128, 128, 0.31);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

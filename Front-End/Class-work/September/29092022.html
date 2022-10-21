@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .figure
+        {
+            grid-area: figure;
+            background: green;
+        }
+        .header
+        {
+            grid-area: header;
+            background: blue;
+        }
+        .logo
+        {
+            grid-area: logo;
+            background: gray;
+        }
+        .aside
+        {
+            grid-area: aside;
+            background: gold;
+        }
+        .main
+        {
+            grid-area: main;
+            background: lavender;
+        }
+        .img
+        {
+            grid-area: img;
+            background: brown;
+        }
+        .text
+        {
+            grid-area: text;
+            background: red;
+        }
+        .section
+        {
+            grid-area: section;
+            background: violet;
+        }
+        .footer
+        {
+            grid-area: footer;
+            background: blueviolet;
+        }
+        .wrapper
+        {
+            display: grid;
+            grid-template-columns: 150px auto auto 150px;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px;
+            grid-template-areas: 
+            "figure header header logo"
+            "aside main main section"
+            "aside img text section"
+            "footer footer footer section";
+        }
+        body
+        {
+            margin: 0;
+        }
+        html,
+        body,
+        .wrapper
+        {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="figure"></div>
+        <div class="header"></div>
+        <div class="logo"></div>
+        <div class="aside"></div>
+        <div class="main"></div>
+        <div class="img"></div>
+        <div class="text"></div>
+        <div class="section"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

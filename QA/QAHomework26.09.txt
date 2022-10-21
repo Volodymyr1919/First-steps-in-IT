@@ -1,0 +1,23 @@
+Level 1
+
+Check - Expected result											
+1. Opened source of Starta University login page 					
+by my personal browser - Source has been opened
+2. Entered E-mail "somee-mail@gogol.com"						
+in corresponding field - Appearance entered E-mail in E-mail field
+3. Entered password "somepassword192837" in appropriate input field - Appearance entered password by points in password field
+4. Pressed button below "Login"	- Opening start page of personal account, but it was failed, error is "Incorrect password"
+
+
+Level 2
+
+	1	Opened source of Starta University login page by my personal browser
+	2	Entered E-mail "somee-mail@gogol.com" in corresponding field
+	3	Entered password "somepassword192837" in appropriate input field
+	4	Pressed button below "Login"
+	5	Have been transferred to personal account start page
+	6	Hover on “Burger“ button for opening menu list
+	7	Chose link “Lessons“ to refresh my mind in 1 lesson
+	8	Scrolling and searching for right lesson for me
+	9	Found right one and after description of lesson click on “View lesson“ red button
+	10	Opened empty page with any records

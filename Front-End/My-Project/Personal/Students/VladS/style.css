@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+figure,
+body
+{
+    margin: 0;
+}
+body
+{
+    background: #0b1014;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(white, 4px);
+}
+header
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+menu
+{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+a
+{
+    text-decoration: none;
+}
+li
+{
+    list-style: none;
+}
+figure
+{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.figure__logo
+{
+    color: orange;
+    margin-right: 5px;
+}
+.menu__link
+{
+    color: gray;
+    border-bottom: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu__link:hover,
+.menu__link-active
+{
+    color: white;
+}
+.link__underscore
+{
+    height: 5px;
+    width: 40%;
+    background: transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.link__underscore-active
+{
+    background: orange;
+}
+.menu__item:hover div
+{
+    background: orange;
+}
+.button
+{
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    color: white;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+.values
+{
+    height: 800px;
+    width: 90%;
+    background: url(jupiter.png);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: center;
+    gap: 30px;
+}
+.values__exp
+{
+    width: 250px;
+    aspect-ratio: 1;
+    background: rgba(255, 255, 255, 0.134);
+    border: 4px solid rgba(255, 255, 255, 0.134);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+h2
+{
+    color: white;
+    font-size: 2.5rem;
+}
+div p
+{
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 1.3rem;
+}
+.values__text
+{
+    color: white;
+    font-size: 2rem;
+}
+.intro
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    gap: 50px;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #0b1014, rgba(75, 75, 75, 0.878), #0b1014, rgba(75, 75, 75, 0.878), #0b1014, rgba(75, 75, 75, 0.878), #0b1014, rgba(75, 75, 75, 0.878), #0b1014, rgba(75, 75, 75, 0.878), #0b1014);
+}
+h1
+{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+.intro__description
+{
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 1.1rem;
+    width: 300px;
+    line-height: 30px;
+}
+.intro__button
+{
+    padding: 25px 50px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background: linear-gradient(to right, #fc7b5c, #fc8806);
+    border: none;
+}

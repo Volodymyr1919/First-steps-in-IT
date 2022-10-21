@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        .wrapper
+        {
+            height: 100%;
+            width: 100%;
+        }
+        body
+        {
+            margin: 0;
+        }
+        aside
+        {
+            background: green;
+            grid-area: aside;
+        }
+        header
+        {
+            background: gold;
+            grid-area: header;
+        }
+        .figure
+        {
+            background: blue;
+            grid-area: figure;
+        }
+        .page
+        {
+            background: violet;
+            grid-area: page;
+        }
+        .link
+        {
+            background: coral;
+            grid-area: link;
+        }
+        .img
+        {
+            background: orange;
+            grid-area: img;
+        }
+        .info
+        {
+            background: sienna;
+            grid-area: info;
+        }
+        .menu
+        {
+            background: darkcyan;
+            grid-area: menu;
+        }
+        .wrapper
+        {
+            display: grid;
+            grid-template-columns: 200px auto auto 200px;
+            grid-template-rows: 100px 200px 200px;
+            gap: 10px;
+            grid-template-areas: 
+            "aside header header figure"
+            "aside page link menu"
+            "aside img info menu";
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <div class="figure"></div>
+        <div class="page"></div>
+        <div class="link"></div>
+        <div class="img"></div>
+        <div class="info"></div>
+        <div class="menu"></div>
+    </div>
+</body>
+</html>

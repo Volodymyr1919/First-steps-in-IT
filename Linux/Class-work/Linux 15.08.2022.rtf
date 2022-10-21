@@ -1,0 +1,145 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red170\green171\blue37;\red202\green51\blue35;
+\red57\green192\blue38;\red56\green185\blue199;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c72331\c71682\c18599;\cssrgb\c83899\c28663\c18026;
+\cssrgb\c25706\c77963\c19557;\cssrgb\c25546\c77007\c82023;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Sun Aug 14 10:53:14 on ttys000\
+volodymyrziubrytskyi@PC-Volodymyr ~ % mkdir -p ~/Downloads/my-project\
+volodymyrziubrytskyi@PC-Volodymyr ~ % cd ~/Downloads/my-project\
+volodymyrziubrytskyi@PC-Volodymyr my-project % touch index.html\
+volodymyrziubrytskyi@PC-Volodymyr my-project % touch style.css\
+volodymyrziubrytskyi@PC-Volodymyr my-project % ls -lah\
+total 0\
+drwxr-xr-x@ 4 volodymyrziubrytskyi  staff   128B Aug 15 19:36 .\
+drwx------+ 7 volodymyrziubrytskyi  staff   224B Aug 15 19:23 ..\
+-rw-r--r--  1 volodymyrziubrytskyi  staff     0B Aug 15 19:36 index.html\
+-rw-r--r--  1 volodymyrziubrytskyi  staff     0B Aug 15 19:36 style.css\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git init\
+\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\cf2 \
+\cf3 hint: is subject to change. To configure the initial branch name to use in all\cf2 \
+\cf3 hint: of your new repositories, which will suppress this warning, call:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git config --global init.defaultBranch <name>\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\cf2 \
+\cf3 hint: 'development'. The just-created branch can be renamed via this command:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git branch -m <name>\cf2 \
+Initialized empty Git repository in /Users/volodymyrziubrytskyi/Downloads/my-project/.git/\
+volodymyrziubrytskyi@PC-Volodymyr my-project % ls -lah\
+total 0\
+drwxr-xr-x@ 5 volodymyrziubrytskyi  staff   160B Aug 15 19:40 .\
+drwx------+ 7 volodymyrziubrytskyi  staff   224B Aug 15 19:23 ..\
+drwxr-xr-x  9 volodymyrziubrytskyi  staff   288B Aug 15 19:40 .git\
+-rw-r--r--  1 volodymyrziubrytskyi  staff     0B Aug 15 19:36 index.html\
+-rw-r--r--  1 volodymyrziubrytskyi  staff     0B Aug 15 19:36 style.css\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git config -l\
+credential.helper=osxkeychain\
+core.repositoryformatversion=0\
+core.filemode=true\
+core.bare=false\
+core.logallrefupdates=true\
+core.ignorecase=true\
+core.precomposeunicode=true\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git config --global user.name 'Volodymyr Ziubrytskyi'\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git config --global user.email 'tarantul294@gmail.com'\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git config -l\
+credential.helper=osxkeychain\
+user.name=Volodymyr Ziubrytskyi\
+user.email=tarantul294@gmail.com\
+core.repositoryformatversion=0\
+core.filemode=true\
+core.bare=false\
+core.logallrefupdates=true\
+core.ignorecase=true\
+core.precomposeunicode=true\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git status\
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 index.html\cf2 \
+	\cf4 style.css\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git add .\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git status\
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   index.html\cf2 \
+	\cf5 new file:   style.css\cf2 \
+\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git commit\
+[master (root-commit) df007f3] Initial commit\
+ 2 files changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 index.html\
+ create mode 100644 style.css\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git log\
+\cf3 commit df007f3806fb44f1d3e2ad2e2b478608f9003aad (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Volodymyr Ziubrytskyi <tarantul294@gmail.com>\
+Date:   Mon Aug 15 20:16:59 2022 +0200\
+\
+    Initial commit\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git log --oneline\
+\cf3 df007f3 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2  Initial commit\
+volodymyrziubrytskyi@PC-Volodymyr my-project % code index.html\
+zsh: command not found: code\
+volodymyrziubrytskyi@PC-Volodymyr my-project % vim index.html\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   index.html\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git commit\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   index.html\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git add .\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git commit\
+[master 309c285] Some changes...\
+ 1 file changed, 2 insertions(+)\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git status\
+On branch master\
+nothing to commit, working tree clean\
+volodymyrziubrytskyi@PC-Volodymyr my-project % vim index.html\
+volodymyrziubrytskyi@PC-Volodymyr my-project % vim style.css \
+volodymyrziubrytskyi@PC-Volodymyr my-project % git add .     \
+volodymyrziubrytskyi@PC-Volodymyr my-project % git commit    \
+[master 45ac407] One more commit\
+ 2 files changed, 4 insertions(+)\
+volodymyrziubrytskyi@PC-Volodymyr my-project % vim .gitignore\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git status    \
+On branch master\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .gitignore\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+volodymyrziubrytskyi@PC-Volodymyr my-project % git add .     \
+volodymyrziubrytskyi@PC-Volodymyr my-project % git commit    \
+[master 8b6e752] gitignore added\
+ 1 file changed, 4 insertions(+)\
+ create mode 100644 .gitignore\
+volodymyrziubrytskyi@PC-Volodymyr my-project % \
+}

@@ -1,0 +1,683 @@
+@media screen and (max-width: 480px) 
+{
+    body
+    {
+        width: 100%;
+    }
+    footer > div:nth-child(2),
+    footer > div:last-child,
+    .about__img,
+    .header__menu,
+    .about__menu,
+    .skills__menu,
+    .expirience__menu,
+    .header__icon:hover::after
+    {
+        display: none;
+    }
+    main
+    {
+        margin-top: 50px;
+        width: 300px;
+    }
+    .home__name,
+    .myname,
+    .home__text,
+    h1
+    {
+        font-size: 1rem;
+    }
+    h1
+    {
+        font-size: 1.3rem;
+    }
+    .home__text,
+    .home__name
+    {
+        width: 300px;
+    }
+    .myname
+    {
+        margin: 0;
+    }
+    .home__name
+    {
+        flex-wrap: wrap;
+    }
+    .home__text span
+    {
+        display: none;
+    }
+    .home__imgme
+    {
+        width: 150px;
+        height: 200px;
+    }
+    .home__imgme img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .logo
+    {
+        font-size: 2rem;
+        text-shadow: rgba(0, 0, 255, 0.403) 5px 15px 2px;
+        width: 45px;
+        height: 55px;
+    }
+    .header__button
+    {
+        width: 50px;
+        height: 45px;
+    }
+    .header__icon
+    {
+        font-size: 1.5rem;
+        background: rgb(0, 98, 255);
+        border-left: 2px solid rgb(0, 98, 255);
+        border-right: 2px solid rgb(0, 98, 255);
+        border-bottom: 5px solid rgb(0, 98, 255);
+    }
+    .main__about
+    {
+        margin-top: 80px;
+    }
+    .main__skills,
+    .skills__description,
+    h2,
+    .skills__text,
+    .about__text,
+    .about__description
+    {
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    mark
+    {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    h2
+    {
+        font-size: 1.1rem;
+    }
+    .skills__text,
+    .about__text
+    {
+        font-size: 1rem;
+    }
+    .about__button
+    {
+        border-right: 4px solid #620000;
+        border-bottom: 7px solid #620000;
+        border-left:  4px solid #620000;
+        padding: 7px;
+    }
+    .main__skills
+    {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-top: 80px;
+    }
+    .skills__apps
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 40px);
+        grid-template-rows: repeat(2, 40px);
+        gap: 5px;
+        margin-left: 0px;
+    }
+    .sills__item
+    {
+        font-size: 1.5rem;
+    }
+    .main__expirience h2
+    {
+        text-align: center;
+    }
+    .picture__block
+    {
+        width: 300px;
+        height: 153px;
+    }
+    .block__img
+    {
+        width: 300px;
+        height: 153px;
+    }
+    .expirience__picture
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-auto-rows: 153px;
+        border-radius: 15px;
+    }
+    footer
+    {
+        margin-top: 80px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    .footer__block
+    {
+        width: 170px;
+    }
+    .block__description
+    {
+        color: orange;
+        width: 140px;
+    }
+    .block__name
+    {
+        width: 140px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 670px)
+{
+    body
+    {
+        width: 100%;
+    }
+    footer > div:nth-child(2),
+    footer > div:last-child,
+    .about__img,
+    .header__menu,
+    .about__menu,
+    .skills__menu,
+    .expirience__menu,
+    .header__icon:hover::after
+    {
+        display: none;
+    }
+    main
+    {
+        margin-top: 50px;
+        width: 500px;
+    }
+    .home__name,
+    .myname,
+    .home__text,
+    h1
+    {
+        font-size: 1.2rem;
+    }
+    h1
+    {
+        font-size: 1.5rem;
+    }
+    .home__text,
+    .home__name
+    {
+        width: 500px;
+    }
+    .home__text span
+    {
+        display: none;
+    }
+    .home__imgme
+    {
+        width: 200px;
+        height: 250px;
+    }
+    .home__imgme img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .logo
+    {
+        font-size: 2.5rem;
+        text-shadow: rgba(0, 0, 255, 0.403) 7px 18px 3px;
+        width: 53px;
+        height: 65px;
+    }
+    .header__button
+    {
+        width: 60px;
+        height: 55px;
+    }
+    .header__icon
+    {
+        font-size: 1.8rem;
+        background: rgb(0, 98, 255);
+        border-left: 3px solid rgb(0, 98, 255);
+        border-right: 3px solid rgb(0, 98, 255);
+        border-bottom: 7px solid rgb(0, 98, 255);
+    }
+    .main__about
+    {
+        margin-top: 80px;
+    }
+    .main__skills,
+    .skills__description,
+    h2,
+    .skills__text,
+    .about__text,
+    .about__description
+    {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+    mark
+    {
+        font-size: 1.2rem;
+        padding: 9px;
+    }
+    h2
+    {
+        font-size: 1.3rem;
+    }
+    .skills__text,
+    .about__text
+    {
+        font-size: 1.1rem;
+    }
+    .about__button
+    {
+        border-right: 6px solid #620000;
+        border-bottom: 9px solid #620000;
+        border-left:  6px solid #620000;
+        padding: 8px;
+    }
+    .main__skills
+    {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-top: 80px;
+    }
+    .skills__apps
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(2, 50px);
+        gap: 8px;
+        margin-left: 0px;
+    }
+    .sills__item
+    {
+        font-size: 2.5rem;
+    }
+    .main__expirience h2
+    {
+        text-align: center;
+    }
+    .picture__block
+    {
+        width: 500px;
+        height: 253px;
+    }
+    .block__img
+    {
+        width: 500px;
+        height: 253px;
+    }
+    .expirience__picture
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-auto-rows: 253px;
+        border-radius: 15px;
+        height: 80vh;
+    }
+    footer
+    {
+        margin-top: 80px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    .footer__block
+    {
+        width: 170px;
+    }
+    .block__description
+    {
+        color: orange;
+        width: 240px;
+    }
+    .block__name
+    {
+        width: 340px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 670px) and (max-width: 900px)
+{
+    body
+    {
+        width: 100%;
+    }
+    footer > div:nth-child(2),
+    footer > div:last-child,
+    .about__img,
+    .header__menu,
+    .about__menu,
+    .skills__menu,
+    .expirience__menu,
+    .header__icon:hover::after
+    {
+        display: none;
+    }
+    main
+    {
+        margin-top: 50px;
+        width: 650px;
+    }
+    .home__name,
+    .myname,
+    .home__text,
+    h1
+    {
+        font-size: 1.2rem;
+    }
+    h1
+    {
+        font-size: 1.5rem;
+    }
+    .home__text,
+    .home__name
+    {
+        width: 650px;
+    }
+    .home__text span
+    {
+        display: none;
+    }
+    .home__name
+    {
+        flex-wrap: wrap;
+    }
+    .home__imgme
+    {
+        width: 250px;
+        height: 300px;
+    }
+    .home__imgme img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .logo
+    {
+        font-size: 2.8rem;
+        text-shadow: rgba(0, 0, 255, 0.403) 7px 18px 3px;
+        width: 63px;
+        height: 75px;
+    }
+    .header__button
+    {
+        width: 70px;
+        height: 65px;
+    }
+    .header__icon
+    {
+        font-size: 2rem;
+        background: rgb(0, 98, 255);
+        border-left: 4px solid rgb(0, 98, 255);
+        border-right: 4px solid rgb(0, 98, 255);
+        border-bottom: 8px solid rgb(0, 98, 255);
+    }
+    .main__about
+    {
+        margin-top: 80px;
+    }
+    .main__skills,
+    .skills__description,
+    h2,
+    .skills__text,
+    .about__text,
+    .about__description
+    {
+        width: 650px;
+        flex-wrap: wrap;
+    }
+    mark
+    {
+        font-size: 1.2rem;
+        padding: 9px;
+    }
+    h2
+    {
+        font-size: 1.3rem;
+    }
+    .skills__text,
+    .about__text
+    {
+        font-size: 1.1rem;
+    }
+    .about__button
+    {
+        border-right: 7px solid #620000;
+        border-bottom: 10px solid #620000;
+        border-left:  7px solid #620000;
+        padding: 10px;
+    }
+    .main__skills
+    {
+        flex-direction: column-reverse;
+        gap: 35px;
+        margin-top: 80px;
+    }
+    .skills__apps
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(2, 60px);
+        gap: 12px;
+        margin-left: 0px;
+    }
+    .sills__item
+    {
+        font-size: 2.7rem;
+    }
+    .main__expirience h2
+    {
+        text-align: center;
+    }
+    .block__img
+    {
+        width: 650px;
+        height: 340px;
+    }
+    .expirience__picture
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 650px);
+        grid-auto-rows: 340px;
+        border-radius: 15px;
+        height: 80vh;
+    }
+    footer
+    {
+        margin-top: 80px;
+        padding: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__block
+    {
+        width: 170px;
+    }
+    .block__description
+    {
+        color: orange;
+        width: 240px;
+    }
+    .block__name
+    {
+        width: 340px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px)
+{
+    body
+    {
+        width: 100%;
+    }
+    footer > div:nth-child(2),
+    footer > div:last-child,
+    .about__img,
+    .header__menu,
+    .about__menu,
+    .skills__menu,
+    .expirience__menu,
+    .header__icon:hover::after
+    {
+        display: none;
+    }
+    main
+    {
+        margin-top: 50px;
+        width: 850px;
+    }
+    .home__name,
+    .myname,
+    .home__text,
+    h1
+    {
+        font-size: 1.4rem;
+    }
+    h1
+    {
+        font-size: 1.9rem;
+    }
+    .home__text,
+    .home__name
+    {
+        width: 850px;
+    }
+    .home__text span
+    {
+        display: none;
+    }
+    .home__name
+    {
+        flex-wrap: wrap;
+    }
+    .home__imgme
+    {
+        width: 350px;
+        height: 400px;
+    }
+    .home__imgme img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .logo
+    {
+        font-size: 3.5rem;
+        text-shadow: rgba(0, 0, 255, 0.403) 7px 18px 3px;
+        width: 73px;
+        height: 85px;
+    }
+    .header__button
+    {
+        width: 80px;
+        height: 75px;
+    }
+    .header__icon
+    {
+        font-size: 2.5rem;
+        background: rgb(0, 98, 255);
+        border-left: 5px solid rgb(0, 98, 255);
+        border-right: 5px solid rgb(0, 98, 255);
+        border-bottom: 9px solid rgb(0, 98, 255);
+    }
+    .main__about
+    {
+        margin-top: 80px;
+    }
+    .main__skills,
+    .skills__description,
+    h2,
+    .skills__text,
+    .about__text,
+    .about__description
+    {
+        width: 850px;
+        flex-wrap: wrap;
+    }
+    mark
+    {
+        font-size: 1.5rem;
+        padding: 9px;
+    }
+    h2
+    {
+        font-size: 1.6rem;
+    }
+    .skills__text,
+    .about__text
+    {
+        font-size: 1.4rem;
+    }
+    .about__button
+    {
+        border-right: 8px solid #620000;
+        border-bottom: 15px solid #620000;
+        border-left:  8px solid #620000;
+        padding: 15px;
+    }
+    .main__skills
+    {
+        flex-direction: column-reverse;
+        gap: 35px;
+        margin-top: 80px;
+    }
+    .skills__apps
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(2, 60px);
+        gap: 12px;
+        margin-left: 0px;
+    }
+    .sills__item
+    {
+        font-size: 2.7rem;
+    }
+    .main__expirience h2
+    {
+        text-align: center;
+    }
+    .block__img
+    {
+        width: 850px;
+        height: 540px;
+    }
+    .expirience__picture
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 850px);
+        grid-auto-rows: 540px;
+        border-radius: 15px;
+        height: 60vh;
+    }
+    footer
+    {
+        margin-top: 80px;
+        padding: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__block
+    {
+        width: 170px;
+    }
+    .block__description
+    {
+        color: orange;
+        width: 340px;
+    }
+    .block__name
+    {
+        width: 340px;
+        flex-wrap: wrap;
+    }
+}

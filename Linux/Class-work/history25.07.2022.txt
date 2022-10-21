@@ -1,0 +1,54 @@
+   0 date
+   1 ls
+   2 date > /tmp/file
+   3 ls -la /tmp
+   4 cat /tmp/file
+   5 date > /tmp/file
+   6 cat /tmp/file
+   7 date >> /tmp/file
+   8 cat /tmp/file
+   9 echo hello world
+  10 echo hello world >> /tmp/file 
+  11 cat /tmp/file
+  12 cat /etc/group
+  13 cat /etc/group | wc -l
+  14 cat /etc/group | wc 
+  15 cat /etc/group | tail
+  16 cat /etc/group | tail -5
+  17 cat /etc/group | tail -3
+  18 cat /etc/group | head
+  19 cat /etc/group | head -3
+  20 ls -la /| wc -l
+  21 df -h
+  22 df
+  23 df -h | grep /
+  24 df -h | grep -w/
+  25 df -h | grep -w /
+  26 df -h | grep -w / | awk '{print $5}'
+  27 df -h | grep -w / | awk '{print $5}' | sed 's/%//g'
+  28 df -h | grep -w / | awk '{print $5}' | sed 's/%/NAME/g'
+  29 df -h | grep -w / | awk '{print $5}' | sed 's/%//g'
+  30 df -h | grep -w / | awk '{print $5}' | sed 's/%//g' >> /tmp/file 
+  31 cat /tmp/file 
+  32 cat /etc/group | grep user
+  33 tail -f /tmp/file
+  34 tail -f /tmp/file | grep EXCEPTION
+  35 cat  /tmp/file | grep error | wc -l
+  36 env
+  37 date
+  38 ls -la /user/local/sbin | grep date
+  39 ls -la /user/local/bin | grep date
+  40 ls -la /usr/local/bin | grep date
+  41 ls -la /bin | grep date
+  42 export MY_VAR=hello
+  43 export NAME=world
+  44 env
+  45 echo $MY_VAR $NAME
+  46 #cat echo ls
+  47 vi /tmp/file 
+  48 cat /tmp/file
+  49 vi
+  50 vi /tmp/file
+  51 vi
+  52 nano /tmp/file
+  53 history > /tmp/history.txt

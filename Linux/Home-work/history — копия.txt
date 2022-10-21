@@ -1,0 +1,6 @@
+   0 nano sleeper.sh
+   1 chmod 744 sleeper.sh
+   2 ./sleeper.sh
+   3 cat /opt/Volodymyr/CurrentOS/OS.txt
+   4 ls -la
+   5 history > /tmp/history.txt
