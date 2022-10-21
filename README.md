@@ -18,6 +18,7 @@
 - [13 Октября](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/Class-work/October/13102022.html)
 
 # Home-work Front End
+- [24 Августа](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/Home-work/HomeworkFE.html)
 - [4 Сентября](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/Home-work/September/0409202218.html)
 - [6 Сентября](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/Home-work/September/06092022.html)
 - [26 Сентября](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/Home-work/September/26092022.html)
