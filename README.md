@@ -1,5 +1,8 @@
 # First-steps-in-IT
 
+#JS
+-[clock](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/JS/clock.html)
+
 # Class-work Front End
 - [30 Августа](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/Class-work/August/30082022.html)
 - [4 Сентября](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/Class-work/September/04092022.html)
