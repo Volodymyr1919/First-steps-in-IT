@@ -13,6 +13,7 @@ var users = JSON.parse(xhr.responseText);
    console.error(users);
  }
 users.sort((a,b) => a.name > b.name ? 1 : -1);
+console.log(users.name);
 }
 xhr.send(null);
 
