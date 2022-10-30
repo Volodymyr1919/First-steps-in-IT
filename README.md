@@ -4,6 +4,7 @@
 
 - [clock](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/JS/clock.html)
 - [new](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/JS/new.html)
+- [Level 3](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/JS/Level_3.html)
 
 # Class-work Front End
 - [30 Августа](https://volodymyr1919.github.io/First-steps-in-IT/Front-End/Class-work/August/30082022.html)
