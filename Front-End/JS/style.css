@@ -1,0 +1,36 @@
+#table
+{
+    display: flex;
+}
+.names
+{
+    width: 200px;
+}
+.posts
+{
+    width: 50px;
+    text-align: center;
+}
+#name,
+#name1,
+#name2,
+#name3,
+#name4,
+#name5,
+#name6,
+#name7,
+#name8,
+#name9,
+#posts,
+#posts1,
+#posts2,
+#posts3,
+#posts4,
+#posts5,
+#posts6,
+#posts7,
+#posts8,
+#posts9
+{
+    border: 3px solid black;
+}
