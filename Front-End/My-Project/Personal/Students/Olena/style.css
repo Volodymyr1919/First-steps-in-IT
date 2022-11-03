@@ -1,0 +1,9 @@
+p
+{
+    background: royalblue;
+    writing-mode: vertical-rl;
+    font-size: 3rem;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
