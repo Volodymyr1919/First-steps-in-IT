@@ -1,30 +1,60 @@
 const requestURL = 'https://jsonplaceholder.typicode.com/users';
 // Get all users
-var xhr  = new XMLHttpRequest();
-xhr.open('GET', requestURL, true);
-xhr.onload = function () {
-var users = JSON.parse(xhr.responseText);
- if (xhr.readyState == 4 && xhr.status == "200")
- {
-   console.log(users);
- }
- else 
- {
-   console.error(users);
- }
-users.sort((a,b) => a.name > b.name ? 1 : -1);
-document.getElementById("name").innerHTML = users[0].name;
-document.getElementById("name1").innerHTML = users[1].name;
-document.getElementById("name2").innerHTML = users[2].name;
-document.getElementById("name3").innerHTML = users[3].name;
-document.getElementById("name4").innerHTML = users[4].name;
-document.getElementById("name5").innerHTML = users[5].name;
-document.getElementById("name6").innerHTML = users[6].name;
-document.getElementById("name7").innerHTML = users[7].name;
-document.getElementById("name8").innerHTML = users[8].name;
-document.getElementById("name9").innerHTML = users[9].name;
+// var xhr  = new XMLHttpRequest();
+// xhr.open('GET', requestURL, true);
+// xhr.onload = function () {
+// var users = JSON.parse(xhr.responseText);
+//  if (xhr.readyState == 4 && xhr.status == "200")
+//  {
+//    console.log(users);
+//  }
+//  else 
+//  {
+//    console.error(users);
+//  }
+// users.sort((a,b) => a.name > b.name ? 1 : -1);
+// document.getElementById("name").innerHTML = users[0].name;
+// document.getElementById("name1").innerHTML = users[1].name;
+// document.getElementById("name2").innerHTML = users[2].name;
+// document.getElementById("name3").innerHTML = users[3].name;
+// document.getElementById("name4").innerHTML = users[4].name;
+// document.getElementById("name5").innerHTML = users[5].name;
+// document.getElementById("name6").innerHTML = users[6].name;
+// document.getElementById("name7").innerHTML = users[7].name;
+// document.getElementById("name8").innerHTML = users[8].name;
+// document.getElementById("name9").innerHTML = users[9].name;
+// }
+// xhr.send(null);
+
+
+
+function myRequest(){
+    return new Promise(function(resolve, reject) {
+        var xhr  = new XMLHttpRequest();
+        xhr.open('GET', "https://jsonplaceholder.typicode.com/users", true);
+        xhr.onload = function () {
+            if(xhr.status >= "200" && xhr.status < "300" && xhr.readyState == 4)
+            {
+                resolve(xhr.response);
+            }
+            else
+            {
+                reject(xhr.statusText);
+            }
+        }
+        xhr.send(null);
+    });
 }
-xhr.send(null);
+
+
+(function (){
+    myRequest().then(function(bla_bla_bla){
+        console.log(bla_bla_bla);
+    })
+})();
+
+
+
 function _sort()
 {
     let igor = document.getElementById("reverse");

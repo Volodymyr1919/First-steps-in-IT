@@ -1,5 +1,5 @@
 console.log("ready");
-let server_url = "https://gorest.co.in/public/v2/users/17";
+let server_url = "https://gorest.co.in/public/v2/users/28";
 document.getElementById("connect").addEventListener("click", function () 
     {
         _requestLogin();
@@ -15,7 +15,6 @@ function _requestUserFT()
             method: 'GET',
             headers:
             {
-                "Accept" : "application/json",
                 "Contetnt-Type" : "application/json",
                 "Authorization": "Bearer 59b6134f99a9c199998761f087b5d02de1afa4830f9982a88bfd940284271d74"
             }
@@ -35,7 +34,6 @@ function _requestLogin()
             method: 'PUT',
             headers: 
             {
-                "Accept" : "application/json",
                 "Contetnt-Type" : "application/json",
                 "Authorization" : "Bearer 59b6134f99a9c199998761f087b5d02de1afa4830f9982a88bfd940284271d74"
             },
@@ -58,7 +56,6 @@ function _requestUser()
         method: 'GET',
         headers:
         {
-            "Accept" : "application/json",
             "Contetnt-Type" : "application/json",
             "Authorization": "Bearer 59b6134f99a9c199998761f087b5d02de1afa4830f9982a88bfd940284271d74"
         }
