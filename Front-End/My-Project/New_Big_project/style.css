@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600&display=swap');
+body
+{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, rgba(117,0,255,1) 25%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+}
+.wrapper
+{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#name,
+#surname,
+#password
+{
+    width: 290px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background: #8f2dffcf;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: large;
+    color: bisque;
+}
+#name::placeholder,
+#surname::placeholder,
+#password::placeholder
+{
+    color: wheat;
+    font-size: large;
+}
+#name:focus,
+#surname:focus,
+#password:focus
+{
+    outline: none;
+}
+#button
+{
+    width: 100px;
+    height: 30px;
+    background: #8316ff;
+    border: none;
+    border-radius: 10px;
+    color: wheat;
+    font-size: large;
+}
+#button:active
+{
+    background: #7b00ff;
+}
