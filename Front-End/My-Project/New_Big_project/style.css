@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600&display=swap');
+html,
 body
 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0;
+}
+body
+{
     background: linear-gradient(45deg, rgba(117,0,255,1) 25%, rgba(255,255,255,1) 100%);
     display: flex;
     justify-content: center;
@@ -23,22 +27,36 @@ body
 #surname,
 #password
 {
+    border: none;
+    background: transparent;
     width: 290px;
     height: 30px;
+    box-sizing: border-box;
+    padding: 3px 0 0 3px;
+    font-size: 18px;
+    color: bisque;
+}
+.name,
+.surname,
+.password
+{
+    width: 300px;
+    height: 30px;
     border-radius: 15px;
-    border: none;
     background: #8f2dffcf;
     padding: 15px;
     box-sizing: border-box;
-    font-size: large;
+    font-size: 18px;
     color: bisque;
+    display: flex;
+    align-items: center;
 }
 #name::placeholder,
 #surname::placeholder,
 #password::placeholder
 {
-    color: wheat;
-    font-size: large;
+    color: rgba(245, 222, 179, 0.823);
+    font-size: 18px;
 }
 #name:focus,
 #surname:focus,
@@ -58,5 +76,5 @@ body
 }
 #button:active
 {
-    background: #7b00ff;
+    background: #6f00ff;
 }
