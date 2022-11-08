@@ -20,7 +20,9 @@ function _requestUserFT()
             }
         }).then(function(response){return response.json()}).then((data)=>{console.log(data.name); localStorage.setItem("First Request", data.name)})
 }
-function _requestLogin()
+new Promise((resolve, reject) => {
+    resolve();
+}).then(function _requestLogin()
 {
     let _postObj = 
     {
@@ -39,17 +41,12 @@ function _requestLogin()
             },
             body: JSON.stringify(_postObj) 
         }).then(function(response){return response;}).then((data) => {console.log(data);
-            if(data.status == "200")
-                {
-                    _requestUser();
-                }
-            else
+            if(data.status !== "200")
                 {
                     alert("unsuccess in PUT function");
                 }
             });
-}
-function _requestUser()
+}).then(function _requestUser()
 {
     fetch(server_url,
     {
@@ -69,4 +66,5 @@ function _requestUser()
             alert("unsuccess with changing data");
         }
     })
-}
+})
+
