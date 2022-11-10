@@ -34,3 +34,59 @@ header
     flex-direction: column;
     justify-content: space-between;
 }
+main
+{
+    background: linear-gradient(405deg, rgba(117,0,255,1) 25%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    height: calc(100% - 350px);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px 0 0 0;
+}
+p
+{
+    margin: 0;
+}
+.get_bonus
+{
+    width: 100%;
+    height: 80px;
+    background: #5d00c7b5;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bonus__text
+{
+    color: tan;
+    font-weight: 500;
+}
+.count_container
+{
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.bonus__count
+{
+    height: 10px;
+    width: 9%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+.bonus__count-active
+{
+    background: rgb(60, 0, 255);
+}
+.bonus__descr
+{
+    color: tan;
+    font-weight: 300;
+    font-size: 12px;
+}
