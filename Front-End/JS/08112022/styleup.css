@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+html,
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(29,235,253,1) 50%, rgba(252,69,69,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sono', sans-serif;
+}
+label{
+    color: brown;
+    font-size: 20px;
+}
+input{
+    color: rgb(252, 234, 69);
+    border: none;
+    width: 250px;
+    height: 30px;
+    background: rgba(131, 58, 180, 0.605);
+    border-radius: 8px;
+    font-size: 18px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: 130px;
+    height: 30px;
+    border: none;
+    background: rgba(131, 58, 180, 0.605);
+    color: rgb(72, 251, 2);
+    font-size: 17px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background: rgba(131,58,180,1);
+}
+input::placeholder{
+    color: rgb(252, 234, 69);
+}
+#updatedData,
+#myData{
+    width: 400px;
+    height: 200px;
+    background: rgba(131, 58, 180, 0.605);
+    color: rgb(72, 251, 2);
+    font-size: 17px;
+    border-radius: 5px;
+    word-break: break-all;
+}
