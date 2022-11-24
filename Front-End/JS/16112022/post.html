@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="post.css" />
+  </head>
+  <body>
+    <div class="container" id="picposts">
+      
+    </div>
+    <script src="requests.js"></script>
+    <script src="helpers.js"></script>
+    <script src="post.js"></script>
+    <script>
+        let post = `<div class="left-side"><img src=${sessionStorage.getItem('image')}></div><div class="right-side"><p>Title: ${sessionStorage.getItem('title')}</p><p>Description: ${sessionStorage.getItem('description')}</p><p>Author: ${sessionStorage.getItem('author')}</div></p>`;
+        document.getElementById("picposts").innerHTML += post;
+    </script>
+  </body>
+</html>
