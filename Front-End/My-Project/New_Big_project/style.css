@@ -64,7 +64,8 @@ body
 {
     outline: none;
 }
-#button
+#logIn,
+#signUp
 {
     width: 100px;
     height: 30px;
@@ -74,7 +75,13 @@ body
     color: wheat;
     font-size: large;
 }
-#button:active
+#logIn:active,
+#signUp:active
 {
     background: #6f00ff;
+}
+#logIn:hover,
+#signUp:hover
+{
+    cursor: pointer;
 }

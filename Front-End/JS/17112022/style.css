@@ -1,0 +1,11 @@
+p {
+  color: black;
+}
+p a {
+  font-weight: bold;
+}
+p a:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

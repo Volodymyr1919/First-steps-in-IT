@@ -1,3 +1,4 @@
+let url = "https://1ae0-37-186-127-62.eu.ngrok.io";
 document.getElementById("logOut").addEventListener("click", function () 
 {
     try {
@@ -30,7 +31,7 @@ document.getElementById("newInfo").addEventListener("click", function ()
 });
 function _getMe()
 {
-    fetch("https://8fd4-2a02-2a57-4052-0-145f-d48e-abbc-890d.eu.ngrok.io" + "/me",
+    fetch(url + "/me",
     {
         method: 'GET',
         headers:
@@ -43,14 +44,14 @@ function _getMe()
         }
     }).then (data => data.json())
     .then(data => { 
-        document.getElementById('myData').innerHTML = "ID is: " + data.id + `<br>` + "Name is: " + data.username + `<br>` + "Age is: " + data.age + `<br>` + "Avatar is: " + data.avatar;
+        document.getElementById('myData').innerHTML = "ID is: " + data._id + `<br>` + "Name is: " + data.username + `<br>` + "Age is: " + data.age + `<br>` + "Avatar is: " + data.avatar;
         console.log("ID is: ", data.id);
         console.log("Name is: ", data.username);
     });
 }
 function logOut()
 {
-    fetch("https://8fd4-2a02-2a57-4052-0-145f-d48e-abbc-890d.eu.ngrok.io" + "/destroy-session",
+    fetch(url + "/destroy-session",
     {
         method: 'POST',
         headers:
@@ -65,7 +66,7 @@ function logOut()
 
 }
 function newInfo(){
-    fetch("https://8fd4-2a02-2a57-4052-0-145f-d48e-abbc-890d.eu.ngrok.io" + "/me", {
+    fetch(url + "/me", {
         method: 'PUT',
         headers: {
             "Content-type" : "application/json",
@@ -80,7 +81,7 @@ function newInfo(){
         })
     }).then (data => data.json())
     .then(data => { 
-        document.getElementById('updatedData').innerHTML = "ID is: " + data.id + `<br>` + "Name is: " + data.username + `<br>` + "Age is: " + data.age + `<br>` + "Avatar is: " + data.avatar;
+        document.getElementById('updatedData').innerHTML = "ID is: " + data._id + `<br>` + "Name is: " + data.username + `<br>` + "Age is: " + data.age + `<br>` + "Avatar is: " + data.avatar;
         console.log("ID is: ", data.id);
         console.log("Name is: ", data.username);
         console.log("Age is: ", data.age);

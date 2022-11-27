@@ -1,3 +1,4 @@
+let url = "https://1ae0-37-186-127-62.eu.ngrok.io";
 document.getElementById("logIn").addEventListener("click", function () 
 {
     try {
@@ -26,7 +27,7 @@ document.getElementById("signUp").addEventListener("click", function(){
 function signIn()
 {
     console.log('start');
-    fetch("https://8fd4-2a02-2a57-4052-0-145f-d48e-abbc-890d.eu.ngrok.io" + "/signin",
+    fetch(url + "/signin",
     {
         method: 'POST',
         headers:

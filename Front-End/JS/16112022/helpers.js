@@ -48,3 +48,10 @@ function showUsers(data){
         document.getElementById("showUsers").innerHTML += post;
     }
 }
+class Helpers {
+
+    constructor() {
+        this.data = data || "";
+        
+    }
+}
