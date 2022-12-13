@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: black;
+        }
+    </style>
+<script type='text/javascript'>//<![CDATA[ 
+window.onload=function(){
+    canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "yellow";
+    ctx.beginPath();
+    ctx.moveTo(75,85); // right-top corner          }
+    ctx.lineTo(75,135); // right-bottom corner      } ----- left triangle
+    ctx.lineTo(25,105); //left corner               }
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(75,135); // top corner               }
+    ctx.lineTo(105,155); // right corner            } ----- left-bottom triangle
+    ctx.lineTo(57,205); //bottom corner             }
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(135,135); // top corner              }
+    ctx.lineTo(105,155); // left corner             } ----- right-bottom triangle
+    ctx.lineTo(153,205); //bottom corner            }        
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(135,85); // left-top corner          }
+    ctx.lineTo(135,135); // left-bottom corner      } ----- right triangle
+    ctx.lineTo(185,105); //right corner             }
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(105,35); // top corner               }
+    ctx.lineTo(75,85); // left-bottom corner        } ----- top triangle
+    ctx.lineTo(135,85); //right-bottom corner       }
+    ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(135,85); // right-top corner         }
+    ctx.lineTo(75,85); // left-top corner           }  
+    ctx.lineTo(75,135); // left-bottom corner       } ----- middle fife-angle
+    ctx.lineTo(105,155); // bottom corner           }
+    ctx.lineTo(135,135); //right-bottom corner      }
+    ctx.fill();
+
+
+
+
+    ctx.beginPath();
+    ctx.moveTo(325,290); // right-top corner            }
+    ctx.lineTo(305,250); // top corner                  }
+    ctx.lineTo(285,290); // left-top corner             }
+    ctx.lineTo(235,305); // left corner                 }   -----The
+    ctx.lineTo(275,330); // left-bottom-top corner      }   -----   Complete
+    ctx.lineTo(265,375); // left-bottom corner          }   -----           Full
+    ctx.lineTo(305,350); // middle-bottom corner        }   -----               Star
+    ctx.lineTo(345,375); // right-bottom corner         }
+    ctx.lineTo(335,330); // right-bottom-top corner     }
+    ctx.lineTo(375,305); // right corner                }
+    ctx.fill();
+
+    // canvas.x = 150;
+    // canvas.y = 150;
+    // var w = 200, h = 200;
+    // context.strokeStyle = "#000000";
+    // context.strokeWeight = 3;
+    // context.shadowOffsetX = 4.0;
+    // context.shadowOffsetY = 4.0;
+    // context.lineWidth = 10.0;
+    // context.fillStyle = "#FF0000";
+    // var d = Math.min(w, h);
+    // var k = 120;
+    // context.moveTo(k, k + d / 4);
+    // context.quadraticCurveTo(k, k, k + d / 4, k);
+    // context.quadraticCurveTo(k + d / 2, k, k + d / 2, k + d / 4);
+    // context.quadraticCurveTo(k + d / 2, k, k + d * 3/4, k);
+    // context.quadraticCurveTo(k + d, k, k + d, k + d / 4);
+    // context.quadraticCurveTo(k + d, k + d / 2, k + d * 3/4, k + d * 3/4);
+    // context.lineTo(k + d / 2, k + d);
+    // context.lineTo(k + d / 4, k + d * 3/4);
+    // context.quadraticCurveTo(k, k + d / 2, k, k + d / 4);
+    // context.stroke();
+    // context.fill();
+}//]]>  
+</script>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400" x="50" y="30"></canvas>
+</body>
+</html>
