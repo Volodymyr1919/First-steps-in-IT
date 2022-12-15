@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#canvas {
+  width: 288px;
+  height: 512px;
+}
+
+body {
+  background-color: #f1f2f6;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.lives {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.gameOver {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  left: 80px;
+  top: 144px;
+  display: none;
+}
+#gameOver {
+  width: 120px;
+  height: 80px;
+}
+
+.gameOver-active {
+  display: block;
+}
+
+#score {
+  position: absolute;
+  top: 5px;
+  left: 245px;
+  color: #fed85c;
+  font-size: 18px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
