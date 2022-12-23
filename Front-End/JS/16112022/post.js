@@ -1,6 +1,6 @@
 async function _openIMG(img) {
     selectedImg = img;
-    console.log(selectedImg.id);
+    sessionStorage.setItem("img_id", selectedImg.id);
     await fetch(url + "/post/" + selectedImg.id, {
       method: "GET",
       headers: {
@@ -20,4 +20,4 @@ async function _openIMG(img) {
         sessionStorage.setItem("description", data.description);
         sessionStorage.setItem("author", data.author.username);
       });
-  }
+}

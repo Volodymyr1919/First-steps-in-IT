@@ -142,4 +142,61 @@ document.getElementById("items").onclick = function (event) {
   }).then(function(){
     location.href = "post.html";
   })
+  showLikes(target);
 };
+
+function showLikes(img) {
+  selectedImg = img;
+  sessionStorage.setItem("img_id", selectedImg.id);
+  fetch(getUrl() + "/likes/" + selectedImg.id, {
+    method: 'GET',
+    headers: {
+      "Content-type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "User-Agent": "telran",
+      "ngrok-skip-browser-warning": "69420",
+      "x-access-token": localStorage.getItem("token"),
+    }
+  }).then((data) => {
+    return data.json();
+  }).then((data) => {
+    console.log(data.count);
+    document.getElementById('likeCount').innerHTML = data.count;
+  })
+};
+function postLike() {
+  console.log("clicked");
+  fetch(getUrl() + "/like", {
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "User-Agent": "telran",
+        "ngrok-skip-browser-warning": "69420",
+        "x-access-token": localStorage.getItem("token"),
+      },
+      body: JSON.stringify({
+        "post_id": sessionStorage.getItem("img_id")
+      })
+    }).then((data) => {
+      return data.json();
+    }).then((data) => {
+      console.log(data);
+    })
+}
+function postDislike() {
+  fetch(getUrl() + "/like/" + sessionStorage.getItem("img_id"), {
+    method: 'DELETE',
+    headers: {
+      "Content-type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "User-Agent": "telran",
+      "ngrok-skip-browser-warning": "69420",
+      "x-access-token": localStorage.getItem("token"),
+    }
+  }).then((data) => {
+    return data.json();
+  }).then((data) => {
+    console.log(data);
+  })
+}

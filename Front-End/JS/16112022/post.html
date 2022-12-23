@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="post.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </head>
   <body>
     <div class="container" id="picposts">
@@ -15,8 +16,58 @@
     <script src="helpers.js"></script>
     <script src="post.js"></script>
     <script>
-        let post = `<div class="left-side"><img src=${sessionStorage.getItem('image')}></div><div class="right-side"><p>Title: ${sessionStorage.getItem('title')}</p><p>Description: ${sessionStorage.getItem('description')}</p><p>Author: ${sessionStorage.getItem('author')}</div></p>`;
+        let post = `
+        <div class="left-side">
+            <img src=${sessionStorage.getItem('image')}>
+        </div>
+        <div class="right-side">
+            <p>Title: ${sessionStorage.getItem('title')}</p>
+            <p>Description: ${sessionStorage.getItem('description')}</p>
+            <p>Author: ${sessionStorage.getItem('author')}</p>
+        </div>`;
         document.getElementById("picposts").innerHTML += post;
+
+          function showLikes() {
+            fetch(getUrl() + "/likes/" + sessionStorage.getItem("img_id"), {
+              method: 'GET',
+              headers: {
+                "Content-type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+                "User-Agent": "telran",
+                "ngrok-skip-browser-warning": "69420",
+                "x-access-token": localStorage.getItem("token"),
+              }
+            }).then((data) => {
+              return data.json();
+            }).then((data) => {
+              document.getElementById('likeCount').innerHTML = data.count;
+              console.log(data.count);
+            })
+          };
+          showLikes();
+          document.getElementById('like').addEventListener("click", function() {
+            console.log("clicked");
+            // fetch(getUrl() + "/like", {
+            //   method: 'POST',
+            //   headers: {
+            //     "Content-type": "application/json",
+            //     "Access-Control-Allow-Origin": "*",
+            //     "User-Agent": "telran",
+            //     "ngrok-skip-browser-warning": "69420",
+            //     "x-access-token": localStorage.getItem("token"),
+            //   },
+            //   body: JSON.stringify({
+            //     "post_id": sessionStorage.getItem("img_id")
+            //   })
+            // }).then((data) => {
+            //   return data.json();
+            // }).then((data) => {
+            //   console.log(data);
+            // })
+          })
+          function postLike() {
+            console.log("clicked");
+          }
     </script>
   </body>
 </html>
