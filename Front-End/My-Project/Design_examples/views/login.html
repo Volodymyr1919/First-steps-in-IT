@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div action="" class="form-login">
+            <ul class="login-nav">
+                <li class="login-nav__item active">
+                    <a href="#" id="login-button" class="lang-login"></a>
+                </li>
+                <li class="login-nav__item">
+                    <a href="#" id="signupbtn" class="lang-signup"></a>
+                </li>
+            </ul>
+
+            <select name="Languge" class="login__input selection-lang" id="select_lang">
+                <option value="de">DE</option>
+                <option value="en">EN</option>
+            </select>
+
+            <!-- LOG IN -->
+            
+            <div class="login__label login__label_set" id="who">
+                <label class="control control--radio"><span class="lang-visitor">Gast</span>
+                    <input type="radio" name="radio" checked="checked" value="visitor"/>
+                    <div class="control__indicator"></div>
+                </label>
+                <label class="control control--radio" style="margin-left: 20px;"><span  class="lang-owner">Inhaber/in</span>
+                    <input type="radio" name="radio" value="owner"/>
+                    <div class="control__indicator"></div>
+                </label>
+            </div>
+            <label for="selection" class="login__label lang-selection_label">Geschäftsart</label>
+            <select name="Type_business" class="login__input" id="select_type">
+                <option value="restaurant" class="langs-restaurant">Restaurant</option>
+                <option value="hairdressing_salon" class="langs-hairdressing_salon">Friseur</option>
+                <option value="gas_station" class="langs-gas_station">Tankstelle</option>
+                <option value="auto_repair_shop" class="langs-auto_repair_shop">Auto-Werkstatt</option>
+                <option value="pharmacy" class="langs-pharmacy">Apotheke</option>
+                <option value="tailoring_studio" class="langs-tailoring_studio">Schneiderei</option>
+                <option value="bath_sauna" class="langs-bath_sauna">Bad, Sauna</option>
+                <option value="bowling" class="langs-bowling">Bowling</option>
+                <option value="bakery" class="langs-bakery">Bäckerei</option>
+                <option value="pet_shop" class="langs-pet_shop">Tierhandlung</option>
+                <option value="store" class="langs-store">Einkaufen</option>
+            </select>
+            <label for="selection" class="login__label lang-business_name">Unternehmen</label>
+            <select name="Name_business" class="login__input" id="select_name"></select>
+            <label for="login-input-user" class="login__label lang-name">
+                Vorname
+            </label>
+            <input id="login-input-user" class="login__input" type="text" />
+            <label for="login-input-password" class="login__label lang-password">
+                Passwort
+            </label>
+            <input id="login-input-password" class="login__input" type="password" /><br><br><br>
+            <button class="login__submit lang-login_button" disabled>Anmeldung</button>
+        </div>
+
+        <!-- SIGN UP -->
+
+        <div action="" class="form-signUp signUp" id="owner-signUp">
+            <ul class="login-nav">
+                <li class="login-nav__item">
+                    <a href="#" id="loginbtn" class="lng-login"></a>
+                </li>
+                <li class="login-nav__item active">
+                    <a href="#" id="signup-button" class="lng-signup"></a>
+                </li>
+            </ul>
+
+            <select name="Languge" class="login__input selection-lang" id="select_lang">
+                <option value="de">DE</option>
+                <option value="en">EN</option>
+            </select>
+
+            <button class="login__submit owner_login lng-owner" id="owner">Inhaber/in</button>
+            <br>
+
+            <!-- OWNER -->
+
+            <div class="owner signUp">
+                <label for="login-input-user" class="login__label lng-business_name">
+                Unternehmen
+                </label>
+                <input id="login-input-user" class="login__input" type="text" />
+                <label for="selection" class="login__label lng-selection_label">Geschäftsart</label>
+                <select name="Type_business" class="login__input" id="select_type">
+                    <option value="restaurant" class="lngs-restaurant">Restaurant</option>
+                    <option value="hairdressing_salon" class="lngs-hairdressing_salon">Friseur</option>
+                    <option value="gas_station" class="lngs-gas_station">Tankstelle</option>
+                    <option value="auto_repair_shop" class="lngs-auto_repair_shop">Auto-Werkstatt</option>
+                    <option value="pharmacy" class="lngs-pharmacy">Apotheke</option>
+                    <option value="tailoring_studio" class="lngs-tailoring_studio">Schneiderei</option>
+                    <option value="bath_sauna" class="lngs-bath_sauna">Bad, Sauna</option>
+                    <option value="bowling" class="lngs-bowling">Bowling</option>
+                    <option value="bakery" class="lngs-bakery">Bäckerei</option>
+                    <option value="pet_shop" class="lngs-pet_shop">Tierhandlung</option>
+                    <option value="store" class="lngs-store">Einkaufen</option>
+                </select>
+                <label for="login-input-user" class="login__label lng-name">
+                    Vorname
+                </label>
+                <input id="login-input-user" class="login__input" type="text" />
+                <label for="login-input-user" class="login__label lng-surname">
+                    Name
+                </label>
+                <input id="login-input-user" class="login__input" type="text" />
+                <label for="login-input-password" class="login__label lng-password">
+                    Passwort
+                </label>
+                <input id="login-input-password" class="login__input" type="password" /><br><br><br>
+                <button class="login__submit" disabled>Registrieren</button>
+            </div>
+
+            <!-- VISITOR -->
+
+            <button class="login__submit visitor_login" id="visitor">Gast</button>
+            <br>
+            <div class="visitor signUp">
+                <label for="selection" class="login__label">Geschäftsart</label>
+                <select name="Type_business" class="login__input" id="select_type">
+                    <option value="restaurant">Restaurant</option>
+                    <option value="hairdressing_salon">Friseur</option>
+                    <option value="gas_station">Tankstelle</option>
+                    <option value="auto_repair_shop">Auto-Werkstatt</option>
+                    <option value="pharmacy">Apotheke</option>
+                    <option value="tailoring_studio">Schneiderei</option>
+                    <option value="bath_sauna">Bad, Sauna</option>
+                    <option value="bowling">Bowling</option>
+                    <option value="bakery">Bäckerei</option>
+                    <option value="pet_shop">Tierhandlung</option>
+                    <option value="store">Einkaufen</option>
+                </select>
+                <label for="selection" class="login__label">Name des Geschäfts</label>
+                <select name="Name_business" class="login__input" id="select_name"></select>
+                <label for="login-input-user" class="login__label">
+                    Vorname
+                </label>
+                <input id="login-input-user" class="login__input" type="text" />
+                <label for="login-input-user" class="login__label">
+                    Name
+                </label>
+                <input id="login-input-user" class="login__input" type="text" />
+                <label for="login-input-password" class="login__label">
+                    Passwort
+                </label>
+                <input id="login-input-password" class="login__input" type="password" /><br><br><br>
+                <button class="login__submit" disabled>Registrieren</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../logic/lang.js"></script>
+    <script src="../logic/login.js"></script>
+</body>
+</html>
