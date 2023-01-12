@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class="bg-dark bg-gradient">
+    
+
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                </li>
+            </ul>
+              <div class="d-none d-lg-block" id="search_input">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+              <div class="d-lg-none" onclick="_search()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-binoculars" viewBox="0 0 16 16">
+                    <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V2.5zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5h-1zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V4zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V3zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14z"/>
+                </svg>
+              </div>
+          </div>
+    </nav>
+    <main class="p-5">
+        <div class="tab-content bg-info bg-gradient rounded-5 rounded-top-0" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <p class="lh-10 p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae placeat fuga quo facere, repudiandae cum commodi saepe reiciendis distinctio officiis. Debitis, magni eum similique aut doloribus cupiditate nulla atque vero inventore voluptatibus cum culpa officia ipsum fugiat nam eos assumenda quo harum omnis. Architecto debitis quo aspernatur natus ipsam, nobis, qui harum amet praesentium consequatur deserunt ipsum nemo doloribus temporibus velit tenetur placeat maiores totam quisquam deleniti minima sed ut. Magni iste expedita consectetur tempore qui inventore vel. Alias iste delectus ex vero debitis nam, odio nesciunt? Nulla, explicabo provident. Eius ratione at reiciendis totam ipsam consectetur itaque accusantium illum voluptates atque, sapiente enim sit inventore velit nisi perferendis in, porro quaerat. Eum, impedit libero. Nostrum nisi obcaecati quod praesentium ut magnam vero reprehenderit iusto quis et veniam atque ea maiores sed, aspernatur animi natus similique ipsa provident beatae odit dolorum unde dicta tempora. Repellendus rem aut eos consequatur voluptatibus molestias eligendi dolorem! Libero, sunt ipsam excepturi illum, quos sit, vero facere laboriosam repellat nostrum sed similique aliquid id amet omnis assumenda dolorem culpa consectetur. Totam sed repellat nemo accusantium, ut modi incidunt, dolores sint, non delectus nam necessitatibus facere magnam sequi labore voluptatibus laboriosam magni in dolor veritatis perspiciatis ipsa. Ipsam non nisi necessitatibus aspernatur error rerum veniam, qui asperiores ut ea quod incidunt omnis totam voluptatem accusamus atque? Expedita aliquid commodi porro possimus ex tenetur! Nihil alias, praesentium deleniti quod, esse quibusdam excepturi nobis quas nostrum facere autem cupiditate! Vitae, possimus adipisci aspernatur optio placeat fugit fugiat inventore eos quisquam soluta ad magni quas impedit tempore. Aliquam exercitationem ratione cupiditate vitae excepturi ipsum similique corporis in quos! Dolorem voluptatibus placeat quos? Exercitationem odit reprehenderit rem, id aliquam, quod consectetur obcaecati minima quibusdam quis, quia iure? Laborum ut eum unde explicabo tempore vitae, laboriosam perspiciatis voluptate perferendis totam, doloribus consectetur debitis consequatur possimus et eius ratione ea molestiae voluptates laudantium maxime magni est nemo quisquam. Nulla sint facilis provident voluptatum officia cum debitis culpa voluptates quia? Ullam nam ad nulla tenetur id necessitatibus, a odit aliquam dolor odio. Cum ullam ducimus nihil officiis. Ex, perspiciatis sequi! Unde distinctio quo ad laboriosam. Aperiam tempore mollitia temporibus sequi maiores eius exercitationem ullam nulla sed facere! Vitae dolor maxime recusandae maiores reprehenderit officiis voluptate optio minima aliquam ducimus ratione, nemo labore soluta corrupti omnis dolore rerum debitis ipsum cumque doloribus corporis? Unde soluta nesciunt ut dolorum et id quasi harum, maiores ab facere. Voluptatibus saepe inventore quasi temporibus. Est placeat esse quis. Tempore excepturi expedita pariatur vel. Dicta, eius, delectus maiores quidem aperiam cupiditate accusamus harum laboriosam ipsum repellat tempore modi, ratione sapiente voluptatum numquam magni quisquam voluptates soluta quae perspiciatis fuga quia molestias repellendus alias. Accusantium odio delectus iste numquam! Architecto optio beatae maxime hic velit praesentium totam laudantium placeat? Ratione velit voluptates, numquam dolore beatae animi quibusdam labore aperiam, porro excepturi vel distinctio debitis explicabo, iste asperiores in provident enim ipsum nostrum voluptatem iure! Corrupti, laborum optio rerum quisquam ea illum. Totam, rerum asperiores enim facilis cumque laudantium velit officiis?</p>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <p class="lh-10 p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse veritatis, incidunt enim magnam quas error molestiae tenetur? Impedit eveniet saepe dolor nihil libero iure optio eos? Maxime eveniet iusto architecto quas enim ipsam odit earum similique mollitia ducimus, alias magni debitis. Consequatur provident tenetur pariatur sequi exercitationem praesentium, eos quae, expedita fugit quibusdam laborum quam dolorem ad corrupti reiciendis, officia id quod veniam quia dignissimos cumque omnis recusandae! Sit ipsa dolorem quae. Beatae porro facere tempora voluptate labore maxime culpa rerum alias sapiente impedit. Eveniet eaque voluptas eos aspernatur, impedit eligendi error obcaecati omnis dolorem fuga totam esse doloremque rem ratione perspiciatis unde, similique itaque reiciendis mollitia nostrum harum ex laudantium et molestiae? Voluptatum, quis. Minus, fugit? Reprehenderit temporibus repellat similique aliquam minima ipsam illo fugit eius dolor? Neque distinctio reprehenderit sit modi doloribus explicabo sed facilis asperiores. Quod, et! Aut excepturi laboriosam eius. Iusto ab minima consequatur suscipit. Vitae magnam voluptatum in obcaecati praesentium dolorem ex, enim similique aspernatur! Placeat quam autem suscipit cum maiores, neque nam perspiciatis ea voluptatum? Sint sapiente, eius voluptatibus dolorem ipsum commodi porro rerum quam molestias, quibusdam debitis repellat error dolor, iusto dignissimos sed praesentium architecto voluptates suscipit libero dolore dolorum ipsa. Doloremque, doloribus?</p>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <p class="lh-10 p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore corrupti asperiores deserunt vero sint sunt. Possimus dolor est cumque, explicabo magni odio incidunt modi quidem illum illo fugiat laudantium nisi velit, esse, reiciendis eos at voluptatem veritatis? Soluta nostrum iste eum corporis fugit aut reprehenderit suscipit, sunt voluptatibus ducimus nesciunt voluptate magnam vero? Perferendis labore rerum quidem ad omnis, molestias porro, tenetur, sint neque eligendi perspiciatis quod officia dolorum hic magni commodi minus doloremque numquam quis dolore iure quo suscipit ratione excepturi. Unde sit quas similique, in sequi ratione magnam modi? Sint nobis, ipsum a deleniti, dolorum, aperiam id fugit inventore distinctio quod dolores error! Laudantium modi deleniti qui eligendi dicta doloribus soluta est velit exercitationem perferendis dignissimos ipsam omnis sapiente eum labore facere pariatur, suscipit, voluptatum alias a voluptas impedit eveniet. Nulla, aut at possimus, nemo eius incidunt alias dolore voluptatem autem aliquid optio. Fugit deserunt eius pariatur, voluptatem hic provident rerum voluptas earum sed? Quae debitis perspiciatis atque repudiandae veritatis impedit magnam voluptatibus libero amet rerum esse, nihil maxime non itaque. Quod nesciunt esse consectetur perferendis, ipsa cumque quisquam eum beatae soluta voluptatum et ab a facilis facere quasi maxime fuga vero omnis ipsum nisi adipisci. Ipsum ab vero quae, fugit sequi illo molestias cum nostrum, velit ratione quos quaerat adipisci sint enim nihil quibusdam harum repellat. Quo velit quisquam eveniet rerum nesciunt, repellat iste at omnis nobis aspernatur, repudiandae, dolore sint corporis incidunt ipsum deserunt quibusdam veniam veritatis nostrum rem placeat dolorem vitae modi ex. Laudantium ex blanditiis explicabo, non tempora porro eum harum in, incidunt tempore distinctio! Vitae nam soluta eaque voluptas, labore repudiandae sunt itaque sequi odio amet harum, aliquid optio suscipit sapiente ex rerum quasi ratione tempore saepe. Recusandae, ipsum nulla sapiente odit nobis molestias officia praesentium commodi alias omnis, aperiam ipsa. Accusantium similique deleniti aliquid, et odio quisquam excepturi numquam sint aliquam quidem quia provident doloremque nesciunt alias, culpa necessitatibus odit! Obcaecati deleniti quis doloribus reprehenderit amet quod maiores magni impedit molestiae culpa veniam itaque possimus nesciunt quo temporibus, fugiat repellat porro voluptatem explicabo error voluptatibus aut illo sunt debitis. Eius iure tenetur eligendi totam voluptatem voluptate repudiandae delectus, soluta fugit aut vero eveniet, exercitationem saepe alias quo architecto harum veritatis nostrum atque. Iure soluta nobis nam. Velit laudantium minima nostrum error asperiores fuga quasi obcaecati similique reiciendis explicabo rerum labore nam, autem odit eos quisquam dolorem amet provident praesentium. Dolorum, perspiciatis debitis.</p>
+            </div>
+          </div>
+    </main>
+    <!-- <nav>
+        <ul>
+            <li><a href="/about_us">About Us</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/contacts">Contacts</a></li>
+            <li><a href="/account">Account</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav> -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2 id="faq">
+        FAQ
+    </h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, minima quod veritatis laboriosam maxime sequi quasi voluptatum debitis. Rerum velit excepturi sunt illum neque possimus error quas saepe, eos cupiditate. Dolore illum fuga ratione, praesentium excepturi blanditiis veritatis, quia ea a saepe natus nam, ipsum rerum quibusdam dolor. Velit molestias non nesciunt autem quia accusantium! Consequuntur, tempore provident, ullam et asperiores quibusdam perferendis, consectetur atque esse ea eaque. Maxime adipisci accusantium, recusandae natus corrupti voluptate, mollitia ad deleniti laborum perspiciatis deserunt laboriosam fuga doloremque. Explicabo, architecto maxime. Maiores accusamus quam, obcaecati rem asperiores, hic sapiente unde tenetur non impedit debitis ab magni, praesentium eaque magnam officiis maxime. Sunt modi sed necessitatibus repellendus alias nihil iusto voluptate magni a minima atque quaerat deserunt possimus reprehenderit labore corrupti itaque vel, earum laborum numquam laudantium corporis eos quis exercitationem! Nemo ducimus aut iure numquam facere odit, nobis nihil corporis cupiditate quaerat dolor est illum laboriosam minima asperiores ea quibusdam, vero accusantium. Veritatis sint mollitia vel fuga enim incidunt voluptates ducimus, officiis recusandae culpa amet, deleniti sequi rem ab repellendus iure molestiae hic, ullam iusto dignissimos quas iste? Consectetur labore omnis, aut exercitationem fuga magnam inventore veritatis repudiandae ipsam saepe fugit temporibus soluta tenetur.</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+        <div>
+            <div class="navigation" data-link="country" target="blank">Country</div>
+            <div class="navigation" data-link="town" target="blank">Town</div>
+            <div class="navigation" data-link="support" target="blank">Support</div>
+            <div class="navigation" data-link="faq" target="self">FAQ</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
