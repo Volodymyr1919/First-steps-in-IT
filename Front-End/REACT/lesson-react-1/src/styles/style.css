@@ -1,0 +1,28 @@
+.mobile_menu {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 56px;
+  transform: translateX(-200px);
+  transition: all 0.5s ease-out;
+}
+
+.mobile_menu_open {
+  transform: none;
+}
+
+.burger_menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .burger_menu {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
