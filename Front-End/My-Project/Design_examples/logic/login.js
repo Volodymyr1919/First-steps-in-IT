@@ -18,12 +18,14 @@ function changeLang() {
     document.querySelector('title').innerHTML = langArr['logIn'][hash];
     document.getElementById('loginbtn').innerHTML = langArr['logIn'][hash];
     document.getElementById('signup-button').innerHTML = langArr['signUp'][hash];
+    document.getElementById('owner').innerHTML = langSignInPage['owner'][hash];
+    document.getElementById('visitor').innerHTML = langSignInPage['visitor'][hash];
     for (let key in langSignInPage) {
         document.querySelector('.lang-' + key).innerHTML = langSignInPage[key][hash];
     };
     for (let key in langBusiness) {
         document.querySelector('.langs-' + key).innerHTML = langBusiness[key][hash];
-    };
+    }
 }
 changeLang();
 
@@ -42,15 +44,25 @@ document.getElementById('loginbtn').addEventListener('click', () => {
 document.getElementById('owner').addEventListener('click', () => {
     document.querySelector('.owner').classList.toggle('signUp');
     document.querySelector('.visitor_login').classList.toggle('signUp');
+    document.querySelector('.languags-signup').innerHTML = langSignUpPage['signup'][hash];
     for (let key in langSignUpPage) {
-        document.querySelector('.lang-' + key).innerHTML = langSignUpPage[key][hash];
+        document.querySelector('.lng-' + key).innerHTML = langSignUpPage[key][hash];
     };
+    for (let key in langBusiness) {
+        document.querySelector('.lngs-' + key).innerHTML = langBusiness[key][hash];
+    }
 });
 document.getElementById('visitor').addEventListener('click', () => {
     document.querySelector('.visitor').classList.toggle('signUp');
     document.querySelector('.owner_login').classList.toggle('signUp');
+    document.querySelector('.languag-signup').innerHTML = langSignUpPage['signup'][hash];
+    for (let key in langSignUpPage) {
+        document.querySelector('.lngug-' + key).innerHTML = langSignUpPage[key][hash];
+    };
+    for (let key in langBusiness) {
+        document.querySelector('.lngugs-' + key).innerHTML = langBusiness[key][hash];
+    }
 });
-
 // LOGIN LOGIC
 
 // document.getElementById('logIn').addEventListener('click', () => {

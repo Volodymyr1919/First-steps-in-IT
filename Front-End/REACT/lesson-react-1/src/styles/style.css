@@ -16,6 +16,19 @@
   display: none;
 }
 
+.NotDone {
+  color: white;
+  background-color: blue;
+  padding: "10px";
+  font-family: "Arial";
+}
+
+.Done {
+  color: gray;
+  background-color: lightgreen;
+  text-decoration: line-through;
+}
+
 @media (max-width: 768px) {
   .burger_menu {
     display: block;

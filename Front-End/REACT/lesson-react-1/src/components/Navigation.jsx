@@ -9,6 +9,26 @@ class Navigation extends Component {
     linkFaq: "FAQ",
   };
 
+  componentDidMount() {
+    console.log("componentDidMount"); // когда компонент загружается
+    this.setState({
+      linkHome : "Lorem"
+    })
+};
+
+componentDidUpdate(prevProps, prevState, snapshot) {
+  console.log("componentDidUpdate"); // Обновление стейта от дочерних клласов или любое обновление
+  // Всегда с условием
+};
+
+componentWillUnmount() {
+  console.log("componentWillUnmount"); // Когда нужно поймать завершение работы какого-то процесса, например выход с страницы
+};
+
+// shouldComponentUpdate(nextProps, nextState, nextContext) {
+//   // условое при котором должен стаботать принудительно componentDidUpdate
+// }
+
   render() {
     return (
       <div className="collapse navbar-collapse" id="navbarSupportedContent">

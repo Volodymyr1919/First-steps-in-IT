@@ -186,6 +186,10 @@ const langSignInPage = {
     }
 };
 const langSignUpPage = {
+    "business_name" : {
+        "de" : "Unternehmen",
+        "en" : "Name of business"
+    },
     "owner" : {
         "de" : "Inhaber/in",
         "en" : "Owner"
@@ -193,10 +197,6 @@ const langSignUpPage = {
     "visitor" : {
         "de" : "Gast",
         "en" : "Visitor"
-    },
-    "business_name" : {
-        "de" : "Unternehmen",
-        "en" : "Name of business"
     },
     "selection_label" : {
         "de" : "Geschäftsart",
@@ -214,16 +214,8 @@ const langSignUpPage = {
         "de" : "Passwort",
         "en" : "Password"
     },
-    "login" : {
-        "de" : "Anmeldung",
-        "en" : "Log In"
-    },
     "signup" : {
         "de" : "Registrieren",
         "en" : "Sign Up"
-    },
-    "login_button" : {
-        "de" : "Anmeldung",
-        "en" : "Log In"
     }
 }
