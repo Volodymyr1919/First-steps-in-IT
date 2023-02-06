@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
-import { ThemeContext } from '../ThemeContext';
-import logo from "../../assets/img/logo.jpeg";
-import header from "./header.scss";
-import Nav from "../Navigation/Nav";
-import { hover } from "@testing-library/user-event/dist/hover";
+import React, { useContext }    from "react";
+import { ThemeContext }         from '../ThemeContext';
+import logo                     from "../../assets/img/logo.jpeg";
+import header                   from "./header.scss";
+import Nav                      from "../Navigation/Nav";
+import { hover }                from "@testing-library/user-event/dist/hover";
 
 export default function Header() {
+
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return(
@@ -15,7 +16,9 @@ export default function Header() {
                 color: theme === "light" ? "black" : "white"
             }} 
         >
-            <figure><img src={logo} alt="" /></figure>
+            <figure>
+                <img src={logo} alt="" />
+            </figure>
             <Nav />
             <button
                 onClick={toggleTheme}

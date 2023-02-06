@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import { ThemeContext } from '../ThemeContext';
-import nav from "./nav.scss";
+import React, { useContext }    from "react";
+import { ThemeContext }         from '../ThemeContext';
+import nav                      from "./nav.scss";
 
 export default function Nav() {
 

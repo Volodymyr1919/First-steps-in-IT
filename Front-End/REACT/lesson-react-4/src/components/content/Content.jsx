@@ -1,23 +1,39 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from '../ThemeContext';
-import User from '../user/User';
-import content from "./content.scss"
+import React, { useContext, useState }  from 'react';
+import { ThemeContext }                 from '../ThemeContext';
+import User                             from '../user/User';
+import { Modal }                        from 'bootstrap';
+import content                          from "./content.scss"
 
 export default function Content() {
 
-    const { theme, toggleTheme } = useContext(ThemeContext);
-    const { name, updateUserName } = useContext(ThemeContext);
-    const { age, updateUserAge } = useContext(ThemeContext);
-    const { email, updateUserEmail } = useContext(ThemeContext);
+    const { theme, toggleTheme }        = useContext(ThemeContext);
+    const { name, updateUserName }      = useContext(ThemeContext);
+    const { age, updateUserAge }        = useContext(ThemeContext);
+    const { email, updateUserEmail }    = useContext(ThemeContext);
 
-    let emailRegexp = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-    let nameRegexp = /[A-Za-z]/;
-    let ageRegexp = /\d/;
+    const [validation, setValidation]   = useState("");
+
+    let emailRegexp     = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+    let nameRegexp      = /[A-Za-z]/;
+    let ageRegexp       = /\d/;
+
     function validateData() {
-        if(nameRegexp.test(String(name).toLowerCase()) && ageRegexp.test(String(age).toLowerCase()) && age < 100 && age > 5 && emailRegexp.test(String(email).toLowerCase())) {
-            alert("Validation passed");
+        if( nameRegexp.test(String(name).toLowerCase())
+            &&
+            ageRegexp.test(String(age).toLowerCase())
+            &&
+            age < 100
+            &&
+            age > 5
+            &&
+            emailRegexp.test(String(email).toLowerCase())) {
+
+            setValidation("Validation passed");
+
         } else {
-            alert("Something went wrong");
+
+            setValidation("Something went wrong");
+
         }
     };
 
@@ -67,10 +83,71 @@ export default function Content() {
                 <button
                     type="button"
                     className={theme === "light" ? "btn btn-primary" : "btn btn-outline-primary"}
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
                     onClick={() => {validateData()}}
                 >
                     Validate
                 </button>
+
+                <div
+                    className="modal fade"
+                    id="exampleModal"
+                    tabIndex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div className="modal-dialog">
+                        <div
+                            className="modal-content"
+                            style={{
+                                background: theme === "light" ? "white" : "#212529"
+                            }}
+                        >
+                        <div className="modal-header">
+                            <h1
+                                className="modal-title fs-5"
+                                id="exampleModalLabel"
+                                style={{
+                                    color: theme === "light" ? "blue" : "#fff"
+                                }}
+                            >
+                                Validation
+                            </h1>
+                            <button
+                                type="button"
+                                className="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            >    
+                            </button>
+                        </div>
+                        <div
+                            className="modal-body"
+                            style={{
+                                color: theme === "light" ? "blue" : "#fff"
+                            }}
+                        >
+                            {validation}
+                        </div>
+                        <div className="modal-footer">
+                            <button
+                                type="button"
+                                className={theme === "light" ? "btn btn-secondary" : "btn btn-outline-secondary"}
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                            <button
+                                type="button"
+                                className={theme === "light" ? "btn btn-primary" : "btn btn-outline-primary"}
+                            >
+                                Save changes
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div
                 className="tab-pane fade"

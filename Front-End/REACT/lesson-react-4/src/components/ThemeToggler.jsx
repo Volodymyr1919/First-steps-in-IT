@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { ThemeContext } from './ThemeContext';
-import Header from './headers/Header';
-import Content from './content/Content';
+import React, { useState }  from 'react';
+import { ThemeContext }     from './ThemeContext';
+import Header               from './headers/Header';
+import Content              from './content/Content';
 
 export default function ThemeToggler() {
-  const [theme, setTheme] = useState('light');
-  const [name, setName] = useState('Guest');
-  const [age, setAge] = useState('0');
-  const [email, setEmail] = useState('example@example.ex');
+  const [theme, setTheme]   = useState('light');
+  const [name, setName]     = useState('Guest');
+  const [age, setAge]       = useState('0');
+  const [email, setEmail]   = useState('example@example.ex');
 
   function toggleTheme() {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -38,7 +38,17 @@ export default function ThemeToggler() {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, name, updateUserName, age, updateUserAge, email, updateUserEmail }}>
+    <ThemeContext.Provider
+      value={{
+        theme,
+        toggleTheme,
+        name,
+        updateUserName,
+        age,
+        updateUserAge,
+        email,
+        updateUserEmail
+      }}>
         <Header />
         <Content />
     </ThemeContext.Provider>
