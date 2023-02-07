@@ -3,7 +3,7 @@ import { ThemeContext }       from '../ThemeContext';
 
 export default function User() {
 
-  const { theme, toggleTheme }      = useContext(ThemeContext);
+  const { theme }                   = useContext(ThemeContext);
   const { name, updateUserName }    = useContext(ThemeContext);
   const { age, updateUserAge }      = useContext(ThemeContext);
   const { email, updateUserEmail }  = useContext(ThemeContext);
