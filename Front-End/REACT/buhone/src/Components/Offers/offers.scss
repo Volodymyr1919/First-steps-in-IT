@@ -1,0 +1,64 @@
+section.offers{
+    background: #EBEBEB;
+    height: 1242px;
+    box-sizing: border-box;
+    padding: 140px 0 0 201px;
+    p.offers__subtitle{
+        font-weight: 900;
+        font-size: 24px;
+        color: #BDBDBD;
+    }
+    h3.offers__title{
+        margin-top: 40px;
+        margin-left: 2px;
+        font-weight: 900;
+        font-size: 48px;
+        color: #333333;
+    }
+    div.offers__description{
+        margin-top: 102px;
+        display: flex;
+        gap: 30px;
+        width: 1110px;
+        flex-wrap: wrap;
+        div.description__block{
+            width: 350px;
+            height: 360px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.259), rgba(0, 0, 0, 0.417)), url(./Assets/offersbg.svg);
+            box-sizing: border-box;
+            padding: 40px 0 40px 42px;
+            &:hover{
+                background: linear-gradient(0deg, rgba(0, 95, 163, 0.55), rgba(0, 95, 163, 0.55)), url(./Assets/offersbg.svg);
+            }
+            h4.block__title{
+                margin: 0;
+                width: 187px;
+                height: 54px;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+            button.block__button{
+                margin-top: 176px;
+                box-sizing: border-box;
+                width: 173px;
+                height: 50px;
+                border: 2px solid #FFFFFF;
+                border-radius: 25px;
+                font-weight: 700;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background: transparent;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

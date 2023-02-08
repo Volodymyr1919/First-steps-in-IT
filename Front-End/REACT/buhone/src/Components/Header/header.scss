@@ -2,6 +2,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0 201px 0 198px;
     .header__button{
         width: 173px;
         height: 50px;
@@ -15,5 +17,9 @@ header{
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: #000000;
+        background: transparent;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }

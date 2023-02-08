@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import nav from "./nav.scss";
 
 export default function Nav() {
