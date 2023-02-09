@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media (max-width: 1400px) {
+    header{
+        padding: 5px 100px 5px 98px;
+    }
+    section.offers{
+        padding: 100px 0 0 51px;
+    }
+    section.about{
+        padding: 100px 0 100px 51px;
+        div.about__achievements{
+            margin-left: 75px;
+        }
+    }
+}
+
+@media (max-width: 968px) {
+    header{
+        padding: 5px 20px 5px 18px;
+        figure{
+            a{
+                img{
+                    width: 260px;
+                    height: 43px;
+                }
+            }
+        }
+        nav{
+            ul{
+                position: absolute;
+                z-index: 100;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                background: #fff;
+                height: 100%;
+                margin-top: 30px;
+                transform: translateX(-500px);
+                transition: all .5s ease-out;
+                li{
+                    list-style: none;
+                    box-sizing: border-box;
+                    padding: 5px 0;
+                }
+            }
+        }
+        .cancelTransform{
+            transform: translateX(-350px);
+        }
+        button{
+            display: none;
+        }
+        img.burgerMenu{
+            display: block;
+            width: 25px;
+            aspect-ratio: 1;
+        }
+    }
+    main{
+        section.offers{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+            padding-bottom: 40px;
+            p.offers__subtitle{
+                display: none;
+            }
+            h3.offers__title{
+                margin: 0;
+                padding: 0;
+                margin-top: 40px;
+                font-size: 24px;
+            }
+            div.offers__description{
+                margin: 0;
+                padding: 0;
+                margin-top: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                width: 100%;
+                flex-wrap: wrap;
+                div.description__block{
+                    height: 180px;
+                    position: relative;
+                    h4.block__title{
+                        position: absolute;
+                        bottom: 0;
+                        font-size: 16px;
+                        font-weight: 400;
+                        width: fit-content;
+                    }
+                    button.block__button{
+                        display: none;
+                    }
+                }
+            }
+        }
+        section.about{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 20px 30px 20px;
+            div.about__description{
+                display: flex;
+                flex-direction: column;
+                p.description__subtitle{
+                    display: none;
+                }
+                h3.description__title{
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 20px;
+                    width: 100%;
+                    height: 87px;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 69px;
+                    color: #333333;
+                    span.title__name{
+                        color: #005FA3;
+                    }
+                }
+                p.description__text{
+                    margin-top: 0;
+                    width: 100%;
+                    height: 245px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 25px;
+                    color: #000000;
+                }
+        
+            }
+        
+            div.about__achievements{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                flex-wrap: wrap;
+                margin: 0;
+                margin-top: 30px;
+                div.achievements__block{
+                    width: 100%;
+                    height: 105px;
+                    padding: 23px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h3.block__title{
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 7px;
+                        margin-left: 17px;
+                        font-weight: 900;
+                        font-size: 25px;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+                    p.block__description{
+                        margin-top: 30px;
+                        margin-left: 17px;
+                        width: 130px;
+                        height: 37px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #000000;
+                    }
+                    button.block__button{
+                        border: none;
+                        background: transparent;
+                        font-size: 8px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        &::before{
+                            margin-top: 31px;
+                            margin-left: 7px;
+                            box-sizing: border-box;
+                            width: 73px;
+                            height: 15px;
+                            border: none;
+                            border-bottom: 1px solid #005FA3;
+                            border-radius: 0;
+                            background: transparent;
+                            font-weight: 700;
+                            font-size: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            letter-spacing: 0.1em;
+                            text-transform: uppercase;
+                            color: #005FA3;
+                            visibility: hidden;
+                            content: "Подробнее";
+                        }
+                        &::after{
+                            visibility: visible;
+                            content: "Все кейсы";
+                            border: none;
+                            border-bottom: 1px solid #005FA3;
+                            color: #005FA3;
+                        }
+                    }
+                    &:hover{
+                        background: #005FA3;
+                        h3.block__title{
+                            color: #FFFFFF;
+                        }
+                        p.block__description{
+                            color: #FFFFFF;
+                        }
+                        button.block__button{
+                            border: none;
+                            &::after{
+                                visibility: visible;
+                                content: "Все кейсы";
+                                border: none;
+                                border-bottom: 1px solid #FFFFFF;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+        
+                }
+        
+            }
+        
+        }
+    }
+    footer{
+        display: block;
+        div.footer__main{
+            h3.main__title{
+    
+            }
+            p.main__text{
+    
+            }
+            form{
+                div.form__phone{
+    
+                }
+                div.form__message{
+    
+                }
+                label.form__labelName{
+                    input.form__name{
+    
+                    }
+                }
+                label.form__labelSurname{
+                    input.form__surname{
+    
+                    }
+                }
+                label.form__labelMessage{
+                    input.form__textMessage{
+    
+                    }
+                }
+                button.form__sendBtn{
+    
+                }
+            }
+        }
+        div.footer__coppyrights{
+            p{
+    
+            }
+        }
+    }
+}

@@ -1,11 +1,14 @@
 import React, { useContext, useState }  from 'react';
 import { ThemeContext }                 from '../ThemeContext';
 import User                             from '../user/User';
+// eslint-disable-next-line no-unused-vars
 import { Modal }                        from 'bootstrap';
+// eslint-disable-next-line no-unused-vars
 import content                          from "./content.scss"
 
 export default function Content() {
 
+    // eslint-disable-next-line no-unused-vars
     const { theme, toggleTheme }        = useContext(ThemeContext);
     const { name, updateUserName }      = useContext(ThemeContext);
     const { age, updateUserAge }        = useContext(ThemeContext);
@@ -35,7 +38,7 @@ export default function Content() {
             setValidation("Something went wrong");
 
         }
-    };
+    }
 
     return(
         <main

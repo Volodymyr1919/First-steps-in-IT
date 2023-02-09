@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React    from "react";
 // eslint-disable-next-line no-unused-vars
-import offers from "./offers.scss"
+import offers   from "./offers.scss"
 
 export default function Offers() {
     let offersItems = [
