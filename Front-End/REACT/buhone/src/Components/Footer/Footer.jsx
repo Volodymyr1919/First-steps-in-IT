@@ -15,21 +15,27 @@ export default function Footer() {
                     У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!
                 </p>
                 <form action="#">
-                    <div className="form__phone"><img src={phone} alt="" /> +7 (111) 222-33-44</div>
-                    <div className="form__message"><img src={message} alt="" /> order@bu-one.ru</div>
-                    <label htmlFor="name" className="form__labelName">
-                        Имя
-                        <input type="text" className="form__name" />
-                    </label>
-                    <label htmlFor="surname" className="form__labelSurname">
-                        Фамилия
-                        <input type="text" className="form__surname" />
-                    </label>
+                    <span className="form__contacts">
+                        <div className="form__phone"><img src={phone} alt="" /> +7 (111) 222-33-44</div>
+                        <div className="form__message"><img src={message} alt="" /> order@bu-one.ru</div>
+                    </span>
+                    <span className="form__personalInputs">
+                        <label htmlFor="name" className="form__labelName">
+                            Имя
+                            <input type="text" className="form__name" />
+                        </label>
+                        <label htmlFor="surname" className="form__labelName form__labelSurname">
+                            Фамилия
+                            <input type="text" className="form__name" />
+                        </label>
+                    </span>
                     <label htmlFor="message" className="form__labelMessage">
                         Сообщение
                         <input type="text" className="form__textMessage"/>
                     </label>
-                    <button className="form__sendBtn">Отправить сообщение</button>
+                    <span className="form__button">
+                        <button className="button__sendBtn">Отправить сообщение</button>
+                    </span>
                 </form>
             </div>
             

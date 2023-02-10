@@ -3,42 +3,104 @@ footer{
     div.footer__main{
         background: url(./Assets/footerbg.svg);
         color: #fff;
+        box-sizing: border-box;
+        padding: 20px 0 60px 15px;
         h3.main__title{
-
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
         }
         p.main__text{
-
+            font-size: 10px;
+            font-weight: 100;
+            margin-top: 15px;
         }
         form{
-            div.form__phone{
-
-            }
-            div.form__message{
-
-            }
-            label.form__labelName{
-                input.form__name{
-
+            span.form__contacts{
+                display: flex;
+                margin-top: 30px;
+                div.form__phone{
+                    img{
+                        height: 25px;
+                    }
+                    font-size: 13px;
+                }
+                div.form__message{
+                    margin-left: 50px;
+                    img{
+                        height: 20px;
+                    }
+                    font-size: 13px;
                 }
             }
-            label.form__labelSurname{
-                input.form__surname{
-
+            span.form__personalInputs{
+                display: flex;
+                margin-top: 15px;
+                label.form__labelName{
+                    font-size: 10px;
+                    font-weight: 600;
+                    display: flex;
+                    flex-direction: column;
+                    input.form__name{
+                        width: 150px;
+                        height: 30px;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid #fff;
+                        color: #fff;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                label.form__labelSurname{
+                    margin-left: 50px;
                 }
             }
             label.form__labelMessage{
+                margin-top: 10px;
+                font-size: 10px;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
                 input.form__textMessage{
-
+                    width: 350px;
+                    height: 100px;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
+                    &:focus{
+                        outline: none;
+                    }
                 }
             }
-            button.form__sendBtn{
-
+            span.form__button{
+                width: 350px;
+                display: flex;
+                flex-direction: row-reverse;
+                button.button__sendBtn{
+                    margin-top: 20px;
+                    height: 50px;
+                    width: 180px;
+                    border: none;
+                    color: #fff;
+                    background: #005FA3;
+                    font-size: 11px;
+                }
             }
         }
     }
     div.footer__coppyrights{
+        display: flex;
         p{
-
+            margin: 0;
+            width: 50%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
         }
     }
 }
