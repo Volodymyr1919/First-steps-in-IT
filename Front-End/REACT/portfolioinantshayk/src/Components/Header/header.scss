@@ -3,4 +3,10 @@ header{
     height: 88px;
     display: flex;
     justify-content: center;
+    figure.header__figure{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }

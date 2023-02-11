@@ -1,0 +1,74 @@
+@import './colors.scss';
+
+@media (max-width: 768px) {
+    body{
+        header{
+            nav{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 150px;
+                height: 100%;
+                background: $background_section;
+                transform: translateX(-300px);
+                transition: all .5s ease-out;
+                ul{
+                    margin-top: 40px;
+                    flex-direction: column;
+                    border: none;
+                    align-items: flex-start;
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                    li{
+                        &:not(:first-child){
+                            margin-left: 0;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+            figure.header__figure{
+                display: block;
+            }
+        }
+        main{
+            section.home{
+                div.home__text{
+                    width: 100%;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    margin-left: 100px;
+                    h1.text__title{
+                        margin-block-end: 0;
+                    }
+                    p.text__languages{
+                        display: none;
+                    }
+                }
+                figure.home__figure{
+                    display: none;
+                }
+                figure.home__mobileFigure{
+                    display: block;
+                }
+            }
+            section.about{
+                margin-top: 83px;
+            }
+            section.skills{
+                height: 1421px;
+                div.skills__pictures{
+                    flex-direction: column;
+                }
+            }
+        }
+        footer{
+            div.footer__pictures{
+                figure.picture__social{
+                    margin: 0;
+                    margin: 0 20px 0 20px;
+                }
+            }
+        }
+    }
+}

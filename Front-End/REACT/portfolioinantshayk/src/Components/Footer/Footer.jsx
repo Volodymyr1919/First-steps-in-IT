@@ -15,10 +15,10 @@ export default function Footer() {
             </p>
             <button className="footer_button">Send message</button>
             <div className="footer__pictures">
-                <figure><img src={linkedin} alt="" /></figure>
-                <figure><img src={instagram} alt="" /></figure>
-                <figure><img src={behance} alt="" /></figure>
-                <figure><img src={dribbble} alt="" /></figure>
+                <figure className="picture__social"><img src={linkedin} alt="" /></figure>
+                <figure className="picture__social"><img src={instagram} alt="" /></figure>
+                <figure className="picture__social"><img src={behance} alt="" /></figure>
+                <figure className="picture__social"><img src={dribbble} alt="" /></figure>
             </div>
             <p className="footer__social">
                 Like me on <br /> LinkedIn, Instagram, Behance, Dribble

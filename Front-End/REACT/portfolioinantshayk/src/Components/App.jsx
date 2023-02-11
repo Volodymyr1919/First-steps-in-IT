@@ -4,6 +4,8 @@ import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 // eslint-disable-next-line no-unused-vars
 import total from "./total.scss";
+// eslint-disable-next-line no-unused-vars
+import mobile from "./mobile.scss";
 
 function App() {
   return (
