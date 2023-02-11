@@ -1,0 +1,24 @@
+@import '../../colors.scss';
+
+section.about{
+    width: 100%;
+    height: 506px;
+    background: $background_section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3.about__title{
+        font-weight: 400;
+        font-size: 34px;
+        text-align: center;
+        color: $nav_black;
+    }
+    p.about_description{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: $nav_black;
+    }
+}

@@ -1,0 +1,37 @@
+@import '../../colors.scss';
+
+section.home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 670px;
+    div.home__text{
+        display: flex;
+        width: 930px;
+        align-items: center;
+        justify-content: space-between;
+        h1.text__title{
+            font-weight: 400;
+            font-size: 47.3392px;
+            line-height: 60px;
+            color: $nav_black;
+        }
+        p.text__description{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: $nav_black;
+        }
+        p.text__languages{
+            font-weight: 400;
+            font-size: 16px;
+            color: $nav_gray;
+            transform: rotate(-90deg);
+            span.languages_eng{
+                color: $nav_black;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import '../colors.scss';
+
+footer{
+    width: 100%;
+    height: 603px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $background_section;
+    h3.footer__title{
+        font-weight: 400;
+        font-size: 34px;
+        text-align: center;
+        color: $nav_black;
+    }
+    p.footer__description{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: $nav_black;
+    }
+    button.footer_button{
+        width: 180.5px;
+        height: 42px;
+        color: $button__text;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        border: none;
+        background: $nav_black;
+        border-radius: 25px;
+        margin-top: 18px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    div.footer__pictures{
+        display: flex;
+        margin-top: 83px;
+    }
+    p.footer__social{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: $nav_gray;
+        margin-top: 29px;
+    }
+}
