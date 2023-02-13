@@ -1,12 +1,10 @@
 import React from "react";
-import SignIn from "./SignIn/SignIn";
-import SignUp from "./SignUp/SignUp";
+import MainForm from "./MainForm/MainForm";
 
 function App() {
   return (
     <div className="App">
-      <SignIn />
-      <SignUp />
+        <MainForm />
     </div>
   );
 }
