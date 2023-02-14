@@ -4,30 +4,30 @@ import { useForm }          from "react-hook-form";
 
 export default function SignIn() {
 
-    const [modalMessage, setModalMessage] = useState("");
+    // const [modalMessages, setModalMessages]   = useState("");
 
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
       } = useForm({
         mode: "onChange",
       });
       const onSubmit = (data) => {
-        // console.log(data);
-        if(!data) {
-            setModalMessage("Please fill up required fields");
-        } else {
-            setModalMessage("Sent successfuly");
+        if(data) {
+            alert("Sent successfuly");
+            // setModalMessages("Sent successfuly");
+        }
+      };
+      const onError = (data) => {
+        if(data) {
+            alert("Please fill up all required fields");
+            // setModalMessages("Please fill up all required fields");
         }
       };
 
-      console.log(watch("example"));
-      console.log("Errors at start", errors);
-    //   setModalMessage(errors);
     return(
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit, onError)}>
             <div className="form sign-in">
                 <h2>Welcome back,</h2>
                 <label>
@@ -63,14 +63,14 @@ export default function SignIn() {
                 <button
                     type="submit"
                     className="submit"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
+                    // data-bs-toggle="modal"
+                    // data-bs-target="#exampleModals"
                 >
                     Sign In
                 </button>
             </div>
 
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModals" tabIndex="-1" aria-labelledby="exampleModalsLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                     <div className="modal-header">
@@ -78,7 +78,7 @@ export default function SignIn() {
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
-                        {modalMessage}
+                        {/* {modalMessages} */}
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>

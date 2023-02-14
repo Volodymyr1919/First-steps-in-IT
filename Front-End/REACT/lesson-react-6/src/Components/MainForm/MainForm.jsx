@@ -1,6 +1,6 @@
-import React from "react";
-import SignIn from "../SignIn/SignIn";
-import SignUp from "../SignUp/SignUp";
+import React    from "react";
+import SignIn   from "../SignIn/SignIn";
+import SignUp   from "../SignUp/SignUp";
 // eslint-disable-next-line no-unused-vars
 import mainForm from "./mainForm.scss";
 
@@ -33,6 +33,7 @@ export default function MainForm() {
                     <SignUp />
                 </div>
             </div>
+            
         </div>
     );
 }

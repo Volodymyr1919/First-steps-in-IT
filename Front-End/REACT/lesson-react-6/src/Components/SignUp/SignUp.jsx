@@ -1,24 +1,30 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import React, { useState }  from "react";
+import { useForm }          from "react-hook-form";
 
 export default function SignUp() {
-
-    const [modalMessage, setModalMessage]   = useState("");
+    
+    // const [modalMessage, setModalMessage]   = useState("");
     const [password, setPassword]           = useState("");
 
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
       } = useForm({
         mode: "onChange",
       });
       const onSubmit = (data) => {
-        // console.log(data);
-        setModalMessage("Sent successfuly");
+        if(data) {
+            alert("Sent successfuly");
+            // setModalMessage("Sent successfuly");
+        }
       };
-
+      const onError = (data) => {
+        if(data) {
+            alert("Please fill up all required fields");
+            // setModalMessage("Please fill up all required fields");
+        }
+      };
       function updatePassword(e) {
         setPassword(e.target.value);
       };
@@ -27,10 +33,8 @@ export default function SignUp() {
         return password === value ? true : "Passwords do not match";
     };
 
-      console.log(watch("example"));
-      console.log("Errors at start", errors);
     return(
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit, onError)}>
             <div className="form sign-up">
                 <h2>Time to feel like home,</h2>
                 <label>
@@ -93,8 +97,8 @@ export default function SignUp() {
                 <button
                     type="submit"
                     className="submit"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
+                    // data-bs-toggle="modal"
+                    // data-bs-target="#exampleModal"
                 >
                     Sign Up
                 </button>
@@ -108,7 +112,7 @@ export default function SignUp() {
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
-                        {modalMessage}
+                        {/* {modalMessage} */}
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
