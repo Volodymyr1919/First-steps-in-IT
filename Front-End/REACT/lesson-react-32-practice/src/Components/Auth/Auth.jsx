@@ -6,6 +6,7 @@ export default function Auth(){
     return(
         <div>
             <SignIn />
+            <hr />
             <SignUp />
         </div>
     );

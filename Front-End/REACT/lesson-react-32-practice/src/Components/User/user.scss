@@ -1,0 +1,121 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: sans-serif;
+    perspective: 400px;
+    width: 100%; 
+  }
+  .cardes__flip{
+    margin-top: 40px;
+  }
+  .cardes__flip:hover .cardes__container, .cardes__flip.hover .cardes__container {
+      transform: rotateY(180deg);
+  }
+  .cardes__container {
+    transition: .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transform-style: preserve-3d;
+  }
+  .cardes {
+    background:  linear-gradient(-45deg, rgba(255, 255, 255, .1) 100px ,transparent 0),
+                 linear-gradient(45deg, rgba(255, 255, 255, .1) 100px ,transparent 0),
+                 linear-gradient(-45deg, rgba(255, 255, 255, .1) 300px ,transparent 0),
+                 linear-gradient(45deg, rgba(255, 255, 255, .1) 300px ,transparent 0),
+                 linear-gradient(0deg, #749BE1 150px, #9267C7);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+    color: white;
+    height: 400px;
+    padding: 30px 15px 15px;
+    position: relative;
+    text-align: center;
+    overflow:hidden;
+    width: 230px;
+    
+    &.cardes--front {
+      backface-visibility: hidden;
+      transform: rotateY(0deg);
+      z-index: 2;
+    }
+    &.cardes--back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      transform: rotateY(180deg);
+    }
+    
+    &::after {
+      content: "";
+      background: rgba(255,255,255, .1);
+      border-radius:50%;
+      height: 500px;
+      margin-left: -250px;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      width: 500px;
+    }
+  }
+  h1 {
+    font-size: 26px;
+    letter-spacing: 2.5px;
+    margin: 25px 0 15px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  h2, span {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    margin: 30px auto 40px;
+    width: 80%;
+  }
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 5px 0 15px;
+  }
+  img {
+    border: 5px solid rgba(255,255,255, .1);
+    border-radius:50%;
+    height: 100px; 
+    width: 100px;
+  }
+  .flip {
+    background: rgba(255,255,255,.1);
+    border-radius: 50%;
+    height: 120px;
+    margin-left: -50px;
+    position: absolute;
+    bottom:-50px;
+    left: 50%;
+    width: 100px;
+    
+    span {
+      position: relative;
+      top: 20px;
+    }
+  }
+form{
+    div.modal-body{
+        display: grid;
+        grid-template-columns: 170px 170px;
+        grid-template-rows: 60px 60px 60px;
+        gap: 10px;
+        p.errorMessage{
+            margin: 0;
+            font-size: 10px;
+            color: red;
+        }
+    }
+}
+
+  
+  
