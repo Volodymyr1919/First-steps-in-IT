@@ -8,17 +8,20 @@ import Users from "./User/Users/Users";
 import Followers from "./User/Followers/Followers";
 // eslint-disable-next-line no-unused-vars
 import Followings from "./User/Followings/Followings";
+// eslint-disable-next-line no-unused-vars
+import Posts from "./Posts/Posts";
 
 function App() {
   return (
     <div className="App">
        <Auth />
+      {/* <br />
       <br />
-      <br />
-      <User />
+      <User /> */}
       {/* <Followers /> */}
       {/* <Followings /> */}
       {/* <Users /> */}
+      <Posts />
     </div>
   );
 }

@@ -1,10 +1,8 @@
 import React, { useState, useEffect }   from "react";
-// eslint-disable-next-line no-unused-vars
-import followers                        from "./followers.scss";
 
-export default function Followers() {
+export default function AllUsers() {
 
-    const [followers, setFollowers] = useState("");
+    const [users, setUsers] = useState("");
 
     let url = "http://65.109.13.139:9191";
 
@@ -17,14 +15,13 @@ export default function Followers() {
   };
   useEffect(() => {
     async function setMe() {
-        await fetch(url + "/followers", requestOptions)
+        await fetch(url + "/users", requestOptions)
         .then(async (response) => {
           const isJson = response.headers
             .get("content-type")
             ?.includes("application/json");
           const data = isJson && (await response.json());
-          console.log(data);
-          setFollowers(data.followers);
+          setUsers(data);
           
           // check for error response
           if (!response.ok) {
@@ -41,28 +38,53 @@ export default function Followers() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
+  async function followUser(e) {
+    console.log(e.target.id);
+    await fetch(url + '/follow', {
+        method: "POST",
+        headers: {
+        "Content-Type"    : "application/json",
+        "x-access-token"  : localStorage.getItem("token"),
+        },
+        body: JSON.stringify({
+            username : e.target.id
+        })
+    })
+    .then((data) => {
+        return data.json();
+    })
+    .then((data) => {
+        console.log(data);
+    })
+      .catch((error) => {
+        console.error("There was an error!", error);
+      });
+  }
+
     return(
         <div>
             <div className="content">
                 <div className="user-list">
-                {Array.from(followers).map(item => <div key={item._id} className="user-row">
+                {Array.from(users).map(item => <div key={item._id} className="user-row">
                         <div className="user">
                             <div className="avatar-content">
                                 <img className="avatar" src={item.avatar} alt=""/>
                             </div>
                             <div className="user-body">
+                                <a className="title" href="#/">{item.fullName}</a>
                                 <div className="skills">
                                     <span className="subtitle">{item.username}</span>
+                                    <span className="subtitle">{item.bio}</span>
                                 </div>
                             </div>
                         </div>
                         <div className="user-option">
                             <button
                               className="btn btn-follow"
-                              type="button"
-                              disabled
+                              id={item.username} type="button"
+                              onClick={(e) => followUser(e)}
                             >
-                              Followed me
+                              Follow
                             </button>
                         </div>
                     </div>)}

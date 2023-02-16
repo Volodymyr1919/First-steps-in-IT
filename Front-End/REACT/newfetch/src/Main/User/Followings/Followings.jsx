@@ -1,10 +1,8 @@
 import React, { useState, useEffect }   from "react";
-// eslint-disable-next-line no-unused-vars
-import followers                        from "./followers.scss";
 
-export default function Followers() {
+export default function Followings() {
 
-    const [followers, setFollowers] = useState("");
+    const [followings, setFollowings] = useState("");
 
     let url = "http://65.109.13.139:9191";
 
@@ -17,14 +15,13 @@ export default function Followers() {
   };
   useEffect(() => {
     async function setMe() {
-        await fetch(url + "/followers", requestOptions)
+        await fetch(url + "/followings", requestOptions)
         .then(async (response) => {
           const isJson = response.headers
             .get("content-type")
             ?.includes("application/json");
           const data = isJson && (await response.json());
-          console.log(data);
-          setFollowers(data.followers);
+          setFollowings(data.following);
           
           // check for error response
           if (!response.ok) {
@@ -45,7 +42,7 @@ export default function Followers() {
         <div>
             <div className="content">
                 <div className="user-list">
-                {Array.from(followers).map(item => <div key={item._id} className="user-row">
+                {Array.from(followings).map(item => <div key={item._id} className="user-row">
                         <div className="user">
                             <div className="avatar-content">
                                 <img className="avatar" src={item.avatar} alt=""/>
@@ -62,7 +59,7 @@ export default function Followers() {
                               type="button"
                               disabled
                             >
-                              Followed me
+                              Followed
                             </button>
                         </div>
                     </div>)}

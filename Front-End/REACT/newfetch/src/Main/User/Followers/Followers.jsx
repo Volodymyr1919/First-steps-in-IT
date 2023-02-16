@@ -1,6 +1,4 @@
 import React, { useState, useEffect }   from "react";
-// eslint-disable-next-line no-unused-vars
-import followers                        from "./followers.scss";
 
 export default function Followers() {
 

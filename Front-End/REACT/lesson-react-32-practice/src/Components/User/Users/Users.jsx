@@ -1,6 +1,6 @@
 import React, { useState, useEffect }   from "react";
 // eslint-disable-next-line no-unused-vars
-import users                            from "./users.scss";
+// import users                            from "./users.scss";
 
 export default function Users() {
 
