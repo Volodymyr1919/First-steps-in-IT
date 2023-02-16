@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --body-bg: #eceff1;
+  --body-color: #000;
+  --user-list-bg: white;
+  --user-list-hover: #f6f8f9;
+  --subtitle-color: #747c81; 
+  --toast-bg: black;
+  --toast-color: white;
+  --btn-bg: #6911e7;
+  --btn-color: white;
+  --footer-color: #000;
+  --footer-hover: #d6dbdf;
+}
+
+.dark{
+  --body-bg: #172024;
+  --body-color: white;
+  --user-list-bg: #263238;
+  --user-list-hover: #303e44;
+  --subtitle-color: #b0bec5;
+  --title-color: white;
+  --toast-bg: white;
+  --toast-color: black;
+  --btn-bg: white;
+  --btn-color: black;
+  --footer-color: white;
+  --footer-hover: #243136;
+}
+
+//
+// Reset
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+p{
+  font-size: 1rem;
+  margin: 0 0 .6rem 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background: var(--body-bg);
+  color: var(--body-color);
+  line-height: 1.5;
+}
+
+//
+// Example
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.user-list{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--user-list-bg);
+  border-radius: .8rem;
+  padding: 1rem 0;
+  min-width: 5rem;
+  margin-bottom: 4rem;
+}
+.user-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  &:hover{
+    background-color: var(--user-list-hover);
+  }
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .avatar-content{
+    margin-bottom: .6rem;
+    .avatar{
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .user-body{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    .title{
+      font-weight: 500;
+      color: var(--title-color);
+      text-decoration: none;
+    }
+    .subtitle{
+      color: var(--subtitle-color)
+    }
+    .skills{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.user-option{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//
+// Button
+
+.btn{
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .025rem;
+  font-family: 'Roboto',sans-serif;
+  color: var(--btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+  background-color: var(--btn-bg);
+  user-select: none;
+  padding: .3rem 1rem;
+  white-space: nowrap;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color .2s ease-in-out, 
+              border-color .2s ease-in-out, 
+              background-color .2s ease-in-out, 
+              box-shadow .2s ease-in-out;
+  &.active{
+    opacity: .7;
+    //pointer-events: none;
+  }
+}
+
+//
+// Responsive
+
+@media(min-width: 540px){
+  .user-row{
+    flex-direction: row;
+    padding: 1rem 2rem;
+  }
+  .user{
+    flex-direction: row;
+    text-align: left;
+    .avatar-content{
+      margin-right: .6rem;
+      margin-bottom: 0;
+    }
+    .user-body{
+      margin-right: 1rem;
+      margin-bottom: 0;
+    }
+  }
+  .user-option{
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+
+//
+// Show more members
+
+.show-more{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: .6rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  color: var(--title-color);
+  font-weight: 500;
+  transition: all .2s ease-in-out;
+  &:hover{
+    background-color: var(--user-list-hover);
+  }
+}
+
+
+//
+// Toast
+
+.toast{
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  z-index: 9000;
+  background-color: var(--toast-bg);
+  color: var(--toast-color);
+  padding: .5rem 1.5rem;
+  border-radius: 0.25rem;
+  visibility: hidden;
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+//
+// Toggle theme
+
+.toggle-theme-content{
+  margin-bottom: 2rem;
+}

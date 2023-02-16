@@ -7,6 +7,9 @@ html, body {
     perspective: 400px;
     width: 100%; 
   }
+  button.btn.btn-danger{
+    background: red;
+  }
   .cardes__flip{
     margin-top: 40px;
   }

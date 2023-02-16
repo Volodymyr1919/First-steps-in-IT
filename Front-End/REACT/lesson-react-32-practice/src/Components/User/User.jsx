@@ -1,7 +1,7 @@
 import React, { useState, useEffect }   from "react";
 import { useForm }                      from "react-hook-form";
 // eslint-disable-next-line no-unused-vars
-// import user                             from "./user.scss";
+import user                             from "./user.scss";
 
 export default function User() {
   let url = "http://65.109.13.139:9191";
@@ -123,6 +123,20 @@ export default function User() {
     setFullName(e.target.value);
   }
 
+  async function deleteMe() {
+    await fetch(url + '/me', {
+      method: "DELETE",
+      headers: {
+        "Content-Type"      : "application/json",
+        "x-access-token"    : localStorage.getItem("token"),
+      }
+    }).then((data) => {
+      return data.json();
+    }).then((data) => {
+      console.log(data);
+    })
+  }
+
   return (
     <div>
       <button
@@ -131,6 +145,12 @@ export default function User() {
         data-bs-target="#exampleModal"
       >
         Change self data
+      </button>
+      <button
+        className="btn btn-danger"
+        onClick={deleteMe}
+      >
+        Delete user
       </button>
       <div className="cardes__flip" onTouchStart={_Hover}>
         <div className="cardes__container">
