@@ -1,7 +1,7 @@
 import React, { useState, useEffect }   from "react";
 import { useForm }                      from "react-hook-form";
 // eslint-disable-next-line no-unused-vars
-import user                             from "./user.scss";
+// import user                             from "./user.scss";
 
 export default function User() {
   let url = "http://65.109.13.139:9191";
@@ -264,7 +264,7 @@ export default function User() {
                   />
                 </label>
                 <label>
-                  <span>User name</span>
+                  <span>User full name</span>
                   <br />
                   <input
                     type="name"

@@ -197,3 +197,22 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+
+  form{
+    div.modal-body{
+        display: grid;
+        grid-template-columns: 170px 170px;
+        grid-template-rows: 60px 60px 60px;
+        gap: 10px;
+        p.errorMessage{
+            margin: 0;
+            font-size: 10px;
+            color: red;
+        }
+    }
+}
+
+.btn-delete{
+  background: #e31b23;
+}
