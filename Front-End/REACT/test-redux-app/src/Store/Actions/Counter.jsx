@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment } from '../Reducers/CounterSlice';
+import { decrement, increment } from '../reducers/CounterSlice';
 // eslint-disable-next-line no-unused-vars
 // import styles from './Counter.module.css'
 
