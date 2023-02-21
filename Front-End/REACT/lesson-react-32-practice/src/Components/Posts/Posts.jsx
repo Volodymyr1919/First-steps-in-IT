@@ -56,8 +56,9 @@ export default function Posts() {
     mode: "onChange",
   });
   const onSubmit = (data) => {
+    console.log(data);
     console.log("User credentials", data);
-    const requestPostsOptions = {
+    fetch(url + "/post", {
       method: "POST",
       headers: {
         "Content-Type"      : "application/json",
@@ -67,11 +68,10 @@ export default function Posts() {
         title         : data.title,
         description   : data.description,
         status        : data.status,
-        image         : data.image,
+        image         : data.img,
         video         : data.video,
       }),
-    };
-    fetch(url + "/post", requestPostsOptions)
+    })
       .then(async (response) => {
         const isJson = response.headers
           .get("content-type")
