@@ -8,3 +8,8 @@ export const deletePost = post => {
         dispatch({ type: 'DELETE_POST', post: post });
     };
 };
+export const updatePost = post => {
+    return (dispatch, getState) => {
+        dispatch({ type: 'UPDATE_POST', post: post });
+    };
+};

@@ -1,5 +1,6 @@
 import React from "react";
 import DeletePost from "./DeletePost";
+import { UpdatePost } from "./UpdatePost"
 
 
 const PostSummary = ({ post }) => {
@@ -9,9 +10,9 @@ const PostSummary = ({ post }) => {
                 <span className="card-title">{post.title}</span>
                 <p>Posted</p>
                 <p className="grey-text">3rd September, 2am</p>
-                <button className="btn pink lighten-1 z-depth-0" id={post}>Update</button>
+                <UpdatePost post={post} />
             </div>
-            <DeletePost post={post}/>
+            <DeletePost post={post} />
         </div>
     );
 };

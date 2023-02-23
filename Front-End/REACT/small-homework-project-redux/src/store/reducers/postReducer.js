@@ -8,11 +8,7 @@ const initState = {
 
 const postReducer = (state = initState, action) => {
     const poduceRes = obj => Object.assign({}, state, obj);
-    function _remove(array, action) {
-        let newArray = array.slice();
-        newArray.splice(action.index, 1)
-        return newArray;
-    }
+
     switch (action.type) {
         case 'CREATE_POST':
             console.log('action.post', action.post);
@@ -23,10 +19,22 @@ const postReducer = (state = initState, action) => {
             });
 
         case 'DELETE_POST':
-            console.log('action.post', action.post);
-            // state.posts = state.posts.filter(item => item.id !== action.post.id)
-            
-            return _remove(state.posts, action.post);
+            console.log('action.post', action.post.post.post);
+            const filteredPosts = state.posts.filter((item) => item.id !== action.post.post.post.id);
+
+            return {
+                ...state,
+                posts: filteredPosts
+            };
+
+        case 'UPDATE_POST':
+            console.log('action.post', action.post, 'post.id', action.post._id);
+            const updatedPosts = state.posts.map((item) => item.id === action.post.id ? action.post : item);
+
+            return {
+                ...state,
+                posts: updatedPosts
+            };
 
         default:
             return state;
