@@ -19,8 +19,8 @@ const postReducer = (state = initState, action) => {
             });
 
         case 'DELETE_POST':
-            console.log('action.post', action.post.post.post);
-            const filteredPosts = state.posts.filter((item) => item.id !== action.post.post.post.id);
+            console.log('action.post', action.post);
+            const filteredPosts = state.posts.filter((item) => item.id !== action.post.id);
 
             return {
                 ...state,
@@ -28,7 +28,7 @@ const postReducer = (state = initState, action) => {
             };
 
         case 'UPDATE_POST':
-            console.log('action.post', action.post, 'post.id', action.post._id);
+            console.log('action.post', action.post, 'post.id', action.post.id);
             const updatedPosts = state.posts.map((item) => item.id === action.post.id ? action.post : item);
 
             return {

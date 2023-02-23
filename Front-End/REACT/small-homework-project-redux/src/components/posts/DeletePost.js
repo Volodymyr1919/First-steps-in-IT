@@ -18,7 +18,7 @@ class DeletePost extends React.Component {
 
     handleDelete = e => {
         e.preventDefault();
-        this.props.deletePost(this.state);
+        this.props.deletePost(this.state.post);
     };
 
     render() {

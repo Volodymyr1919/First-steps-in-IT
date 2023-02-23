@@ -5,7 +5,7 @@ export const createPost = post => {
 };
 export const deletePost = post => {
     return (dispatch, getState) => {
-        dispatch({ type: 'DELETE_POST', post: post });
+        dispatch({ type: 'DELETE_POST', post: post.post });
     };
 };
 export const updatePost = post => {

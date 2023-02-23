@@ -18,7 +18,6 @@ export const UpdatePost = ({ post }) => {
 
   return (
     <div>
-        {/* <button className="btn pink lighten-1 z-depth-0">Update</button> */}
         <form onSubmit={handleFormSubmit}>
             <input
                 type="text"
