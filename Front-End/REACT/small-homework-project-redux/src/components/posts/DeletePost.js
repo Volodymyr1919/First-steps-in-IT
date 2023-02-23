@@ -18,7 +18,12 @@ class DeletePost extends React.Component {
 
     handleDelete = e => {
         e.preventDefault();
-        this.props.deletePost(this.state.post);
+        let text = "Are you sure, want to delete post?";
+        if (window.confirm(text) === true) {
+            this.props.deletePost(this.state.post);
+          } else {
+            return;
+          }
     };
 
     render() {
