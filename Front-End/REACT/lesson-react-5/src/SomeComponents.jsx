@@ -2,6 +2,7 @@ import React, { useState, useMemo } from "react";
 
 export default function SomeComponent() {
 
+    // eslint-disable-next-line no-unused-vars
     const [data, setData] = useState([
         { id: 1, name: 'Apple', price: 2.99 },
         { id: 2, name: 'Banana', price: 1.99 },
