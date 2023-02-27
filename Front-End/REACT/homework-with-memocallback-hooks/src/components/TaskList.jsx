@@ -6,8 +6,12 @@ function TodoList(props) {
   // memoized function to delete a task
   const deleteTask = useCallback((index) => {
     const newTodos = [...todos];
-    newTodos.splice(index, 1);
-    setTodos(newTodos);
+    if (window.confirm("Sure?") === true) {
+      newTodos.splice(index, 1);
+      setTodos(newTodos);
+    } else {
+      return;
+    }
   }, [todos]);
 
   // memoized array of completed tasks

@@ -3,7 +3,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 function TaskScheduler(props) {
 
     const [tasks, setTasks] = useState(props.todo);
-  const [selectedCategory, setSelectedCategory] = useState('all');
+    const [selectedCategory, setSelectedCategory] = useState('all');
 
   // memoized filtered tasks based on selected category
   const filteredTasks = useMemo(() => {
@@ -16,8 +16,13 @@ function TaskScheduler(props) {
 
   // memoized function to delete a task
   const deleteTask = useCallback((taskId) => {
-    const newTasks = tasks.filter((task) => task.id !== taskId);
-    setTasks(newTasks);
+    if(window.confirm("Sure?") === true) {
+      const newTasks = tasks.filter((task) => task.id !== taskId);
+      setTasks(newTasks);
+    } else {
+      return;
+    }
+    
   }, [tasks]);
 
   // memoized function to handle category change
