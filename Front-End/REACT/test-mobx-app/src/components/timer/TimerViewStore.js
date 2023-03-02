@@ -30,7 +30,7 @@ class TimerViewStore {
         // const disposer = reaction(
         //     () => this.seconds,
         //     (newSec, oldSec) => {
-        //         console.log("Waiting 30 seconds");
+                // console.log("Waiting 30 seconds");
         //         if (newSec === 30) {
         //             //unmount THIS reaction
         //             disposer();
