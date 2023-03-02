@@ -43,6 +43,7 @@ const InventoryListView = observer(({ itemListState }) => {
             <label>
                 Search:
                 <input
+                    className="search"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />

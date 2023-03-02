@@ -1,0 +1,137 @@
+:root {
+    --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+    --gray: #34495e;
+    --darkgray: #2c3e50;
+  }
+  
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: var(--darkgray);
+    background-image: none;
+    cursor: pointer;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  
+  /* Other styles*/
+  body {
+    color: #fff;
+    background: var(--background-gradient);
+  }
+  h1 {
+    margin: 0 0 0.25em;
+  }
+  a {
+    font-weight: bold;
+    color: var(--gray);
+    text-decoration: none;
+    padding: .25em;
+    border-radius: .25em;
+    background: white;
+  }
+  
+  input {
+    background: transparent;;
+    border: 1px solid blue;
+    height: 20px;
+    border-radius: 5px;
+    &::placeholder {
+        color: blue;
+    }  
+  }
+
+  .search {
+	background: #8a44d5;;
+	border-radius: 10px;
+	margin: 0.5em 0;
+	padding: 0.5em 0.5em 0.5em 1em;
+	transition: all 0.5s;;
+	width: 100px;
+
+	&:hover,
+    &:focus {
+        background: #853cd3;
+    }
+  }
+
+  button {
+    width: 100px;
+    height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+  &::after {
+    position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &:hover::after{
+    left: 0;
+    width: 100%;
+  }
+  &:active{
+    top: 2px;
+  }
+  }
+  
