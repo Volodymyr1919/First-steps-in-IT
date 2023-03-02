@@ -3,25 +3,28 @@ import { makeObservable, observable, action } from 'mobx';
 class TodoItemViewStore {
     id = Math.random()
     title = ''
-    finished = false
+    completed = false
 
-    constructor(title) {
+    constructor(data) {
         makeObservable(this, {
             title: observable,
-            finished: observable,
+            completed: observable,
             toggle: action,
-            rename: action,
+            rename: action
         })
-        this.title = title
+        this.title = data.title;
+        this.completed = data.completed;
+        this.id = data.id;
     }
 
     toggle = () => {
-        this.finished = !this.finished
+        this.completed = !this.completed
     }
 
     rename = (title) => {
         this.title = title
     }
+
 }
 
 export default TodoItemViewStore;

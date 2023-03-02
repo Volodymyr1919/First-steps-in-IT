@@ -23,7 +23,7 @@ const InventoryListView = observer(({ itemListState }) => {
     }
 
     const onLoad = () => {
-        console.log("Total amount of items:", filteredItems.length, "List of items in JSON: ", JSON.stringify(filteredItems));
+        console.log("Total amount of items:", filteredItems.length, "List of items in JSON:", JSON.stringify(filteredItems));
     }
 
     const handleCategoryChange = useCallback((e) => {

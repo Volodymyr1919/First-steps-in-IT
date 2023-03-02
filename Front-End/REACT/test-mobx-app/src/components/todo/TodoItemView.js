@@ -11,7 +11,7 @@ const TodoItemView = observer((props) => {
         <li>
             <input
                 type="checkbox"
-                checked={todoItemState.finished}
+                checked={todoItemState.completed}
                 onChange={() => todoItemState.toggle()}
             />
             {todoItemState.title}
