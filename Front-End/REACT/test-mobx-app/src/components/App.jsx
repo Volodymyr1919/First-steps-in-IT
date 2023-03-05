@@ -1,5 +1,6 @@
 import TodoListStore from './todo/TodoListViewStore.js';
 import TodoListView from './todo/TodoListView.js';
+// eslint-disable-next-line no-unused-vars
 import TodoItemViewStore from './todo/TodoItemViewStore.js';
 import TimerView from './timer/TimerView.js';
 import timerStore from './timer/TimerViewStore.js';

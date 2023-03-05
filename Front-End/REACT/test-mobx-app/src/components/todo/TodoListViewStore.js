@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { makeObservable, observable, action, computed, runInAction } from 'mobx';
 import axios from 'axios';
 import TodoItemStore from './TodoItemViewStore.js';
