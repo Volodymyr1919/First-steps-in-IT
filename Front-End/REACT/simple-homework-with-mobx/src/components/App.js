@@ -1,10 +1,13 @@
 import React from "react";
 import TimerView from "./timer/TimerView";
 import timerStore from "./timer/TimerViewStore";
+// eslint-disable-next-line no-unused-vars
+import appStyle from "./app.scss";
 
 setInterval(() => {
   timerStore.increase();
-}, 1000)
+  timerStore.decrease();
+}, 1000);
 
 function App() {
   return (
