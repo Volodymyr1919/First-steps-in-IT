@@ -1,0 +1,117 @@
+@import "../scss/color.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+nav.quick-link{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 100;
+    margin-top: -144px;
+    ul{
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.6;
+        font-family: inherit;
+        li{
+            list-style: none;
+            list-style-position: outside;
+            display: block;
+            height: 48px;
+            width: 48px;
+            position: relative;
+            a{
+                text-decoration: none;
+                background: $hover_menu;
+                height: 48px;
+                width: 48px;
+                display: block;
+                text-align: center;
+                font-size: 22px;
+                padding-top: 0.4rem;
+                color: $clear-white;
+                opacity: 1;
+                position: relative;
+                z-index: 1;
+                -webkit-transition: .2s;
+                transition: .2s;
+                box-sizing: border-box;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: $link_after;
+                    border-radius: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    -webkit-transform: scale(.5);
+                    transform: scale(.5);
+                    -webkit-transition: .2s cubic-bezier(.215,.61,.355,1);
+                    transition: .2s cubic-bezier(.215,.61,.355,1);
+                    z-index: -1;
+                }
+                &:hover::after{
+                    -webkit-transform: none;
+                    transform: none;
+                    border-radius: 0;
+                    background: $hover_menu;
+                    background: $link_hover_after_bg;
+                }
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                background: $link_after;
+                border-radius: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                -webkit-transform: scale(.5);
+                transform: scale(.5);
+                -webkit-transition: .2s cubic-bezier(.215,.61,.355,1);
+                transition: .2s cubic-bezier(.215,.61,.355,1);
+                z-index: -1;
+            }
+            span.title{
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: -.01em;
+                position: absolute;
+                font-size: 12px;
+                left: 56px;
+                top: 17px;
+                color: $clear-white;
+                text-transform: uppercase;
+                text-align: left;
+                width: 100px;
+                border-bottom: 1px solid currentColor;
+                display: block;
+                transform: translateX(10px);
+                -webkit-transition: .3s;
+                transition: .3s;
+                visibility: hidden;
+                opacity: 0;
+                &:focus-visible{
+                    outline: -webkit-focus-ring-color auto 1px;
+                }
+            }
+            &:hover{
+                span.title{
+                    visibility: visible;
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
+        li.active{
+            &::after{
+                -webkit-transform: none;
+                transform: none;
+                border-radius: 0;
+                background: $li_active;
+                background: $link_hover_after_bg;
+            }
+        }
+    }
+}

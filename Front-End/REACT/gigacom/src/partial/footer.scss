@@ -1,0 +1,21 @@
+@import "../scss/color.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+footer#footer{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -.01em;
+    position: fixed;
+    bottom: 20px;
+    right: 56px;
+    margin-right: -8px;
+    color: $clear-white;
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    a{
+        margin-left: 18px;
+        font-size: 20px;
+        color: $clear-white;
+    }
+}

@@ -1,0 +1,73 @@
+@import "../scss/color.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+header.header-top{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    height: 56px;
+    div.logo{
+        transition: .3s;
+        display: inline-block;
+        float: left;
+        a{
+            color: $header_link;
+            text-decoration: none;
+            line-height: inherit;
+            img{
+                height: 56px;
+                width: auto;
+                padding: 8px 16px;
+                box-sizing: border-box;
+            }
+        }
+        &:hover{
+            background: $hover_menu;
+        }
+    }
+    div.menu{
+        margin: 0;
+        padding: 0;
+        float: left;
+        ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                height: 56px;
+                display: block;
+                float: left;
+                text-transform: capitalize;
+                font-size: 18px;
+                padding: 14px 16px;
+                transition: .3s;
+                line-height: inherit;
+                position: relative;
+                box-sizing: border-box;
+                &:first-child::after{
+                    position: absolute;
+                    left: 0;
+                    top: 25%;
+                    height: 50%;
+                    width: 1px;
+                    background: $clear-white;
+                    content: "";
+                }
+                &:hover{
+                    background: $hover_menu;
+                    color: $clear-white;
+                }
+                a{
+                    text-decoration: none;
+                    font-family: 'Open Sans', sans-serif;
+                    letter-spacing: -.01em;
+                    background: 0 0;
+                    font-weight: 300;
+                    color: $clear-white;
+                }
+            }
+        }
+    }
+}
