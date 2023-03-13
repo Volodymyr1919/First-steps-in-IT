@@ -103,14 +103,8 @@ nav.quick-link{
                     transform: none;
                 }
             }
-        }
-        li.active{
-            &::after{
-                -webkit-transform: none;
-                transform: none;
-                border-radius: 0;
+            a.active{
                 background: $li_active;
-                background: $link_hover_after_bg;
             }
         }
     }

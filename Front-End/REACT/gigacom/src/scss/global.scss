@@ -1,25 +1,101 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: $site_bg;
+    // background-color: $site_bg;
+}
+
+#myVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 main{
     height: 100%;
-    position: relative;
     touch-action: none;
-    top: 0px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     section{
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transition: all ease-in-out .5s;
         p{
             color: $clear-white;
             font-size: 50px;
+            transition: all ease-in-out .5s;
         }
     }
+}
+
+.slide-routes{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.back-enter,
+.forward-enter {
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    section{
+        width: 60vw;
+        height: 60vh;
+        p{
+            font-size: 25px;
+        }
+    }
+}
+.back-enter-active,
+.back-exit,
+.forward-enter-active,
+.forward-exit {
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    section{
+        border-radius: 10px;
+        background: $hover_menu;
+        width: 60vw;
+        height: 60vh;
+        p{
+            font-size: 25px;
+        }
+    }
+}
+.back-exit-active,
+.forward-exit-active {
+    transform: translate(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    section{
+        border-radius: 10px;
+        background: $hover_menu;
+        width: 60vw;
+        height: 60vh;
+        p{
+            font-size: 25px;
+        }
+    }
+}
+.forward-enter-active,
+.back-exit-active{
+    margin-top: 80px;
 }
