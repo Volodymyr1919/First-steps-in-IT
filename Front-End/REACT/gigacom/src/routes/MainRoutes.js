@@ -51,7 +51,7 @@ export {allRoutes};
 
 function MainRoutes() {
     return(
-        <SlideRoutes animation='vertical-slide'>
+        <SlideRoutes animation='vertical-slide' duration={1100}>
             {allRoutes.map((route, index) => (
                 <Route
                     key={index}

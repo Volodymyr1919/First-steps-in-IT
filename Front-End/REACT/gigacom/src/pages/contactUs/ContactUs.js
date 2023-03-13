@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class ContactUs extends Component {
     render() {
         return (
-            <div>
+            <section className='main_contact' data-anchor="contact-us">
                 <p>Contact Us</p>
-            </div>
+            </section>
         );
     }
 }

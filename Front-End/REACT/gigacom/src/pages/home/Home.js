@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+// eslint-disable-next-line no-unused-vars
+import home from "./home.scss";
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <section className='main_home' data-anchor="home">
                 <p>Home</p>
-            </div>
+            </section>
         );
     }
 }

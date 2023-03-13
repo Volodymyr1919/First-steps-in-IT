@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Portfolio extends Component {
     render() {
         return (
-            <div>
+            <section className='main_portfolio' data-anchor="portfolio">
                 <p>Portfolio</p>
-            </div>
+            </section>
         );
     }
 }

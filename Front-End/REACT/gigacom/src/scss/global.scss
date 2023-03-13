@@ -3,3 +3,23 @@ body {
     padding: 0;
     background-color: $site_bg;
 }
+
+main{
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    top: 0px;
+    width: 100%;
+    section{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+            color: $clear-white;
+            font-size: 50px;
+        }
+    }
+}

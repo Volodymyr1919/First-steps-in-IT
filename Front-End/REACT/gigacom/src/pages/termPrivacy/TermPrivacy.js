@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class TermPrivacy extends Component {
     render() {
         return (
-            <div>
+            <section className='main_terms' data-anchor="terms-and-privacy">
                 <p>Terms & Privacy</p>
-            </div>
+            </section>
         );
     }
 }

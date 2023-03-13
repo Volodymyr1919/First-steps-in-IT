@@ -5,12 +5,10 @@ div.rightDots{
     right: 28px;
     margin-right: 10px;
     position: fixed;
-    position: absolute;
     z-index: 100;
     margin-top: -32px;
     top: 50%;
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
     ul{
         margin: 0;
         padding: 0;
