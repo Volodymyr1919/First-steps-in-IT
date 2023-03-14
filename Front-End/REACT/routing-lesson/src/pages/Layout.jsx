@@ -1,13 +1,14 @@
 import React from "react";
 import Navigation from "./partial/Navigation";
 import Footer from "./partial/Footer";
+import { Outlet } from "react-router-dom";
 
-const Layout = ({ children }) => {
+const Layout = () => {
     return(
         <>
             <Navigation />
             <hr />
-            <main>{children}</main>
+            <main><Outlet /></main>
             <Footer />
         </>
     );

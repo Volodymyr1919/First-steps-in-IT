@@ -5,7 +5,6 @@ import Projects from './pages/projects/Projects';
 import Requests from './pages/requests/Requests';
 import Login from "./pages/partial/Login";
 import Signup from "./pages/partial/Signup";
-import NotFound from "./pages/notFound/NotFound";
 
 const links = [
     { id: Math.random(), href: '/', tag: <Home />, title: "Home" },
@@ -15,8 +14,7 @@ const links = [
     { id: Math.random(), href: '/requests', tag: <Requests />, title: "Requests" },
     { id: Math.random(), href: '/projects/:id', tag: <Projects /> },
     { id: Math.random(), href: '/login', tag: <Login />, title: "Login" },
-    { id: Math.random(), href: '/signup', tag: <Signup />, title: "Signup" },
-    { id: Math.random(), href: '*', tag: <NotFound /> }
+    { id: Math.random(), href: '/signup', tag: <Signup />, title: "Signup" }
 ];
 
 export default links;

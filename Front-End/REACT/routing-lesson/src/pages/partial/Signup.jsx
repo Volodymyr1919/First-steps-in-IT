@@ -6,7 +6,7 @@ export default function Signup() {
     return(
         <div className="main-login">
             <div className="login-box">
-                <h2>Login</h2>
+                <h2>Signup</h2>
                 <form>
                     <div className="user-box">
                         <input type="text" name="" required="" />
